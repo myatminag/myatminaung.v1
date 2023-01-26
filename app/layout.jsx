@@ -1,14 +1,23 @@
-import './globals.css'
+"use client"
 
-export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
-      <body>{children}</body>
-    </html>
-  )
-}
+import "./globals.css";
+
+import Header from "../components/navbar";
+import Footer from "../components/footer";
+
+const RootLayout = ({ children }) => {  
+
+    return (
+        <html lang="en">
+            <body>
+                <Header />
+                <main>
+                    { children }
+                </main>
+                <Footer />
+            </body>
+        </html>
+    );
+} 
+
+export default RootLayout;
