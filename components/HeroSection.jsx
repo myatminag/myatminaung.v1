@@ -8,10 +8,9 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
 import ResumeIcon from "./icons/ResumeIcon";
-import SocialMedia from "@/components/social";
 import AnimationLottie from "@/lib/animation";
 
-const Hero = ({ homeRef }) => {
+const HeroSection = ({ homeRef }) => {
 
     const router = useRouter();
 
@@ -77,4 +76,4 @@ const Hero = ({ homeRef }) => {
     );
 }
 
-export default Hero;
+export default HeroSection;
