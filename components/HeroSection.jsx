@@ -35,7 +35,7 @@ const HeroSection = ({ homeRef }) => {
             </Box>
             <Stack direction={"row"} alignItems={"center"}>
                 <Stack direction={"column"} spacing={1} alignItems={"flex-start"}> 
-                    <Typography color={"#acd7ff"} fontSize={"0.9rem"}>
+                    <Typography color={"#acd7ff"}>
                         Welcome, my name is
                     </Typography>
                     <Typography color={"#acd7ff"} fontWeight={600} sx={{ 
