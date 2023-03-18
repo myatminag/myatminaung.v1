@@ -8,9 +8,24 @@ import AboutIcon from '../icons/AboutIcon';
 import ProjectIcon from '../icons/ProjectIcon';
 import ContactIcon from '../icons/ContactIcon';
 
-const MobileNav = () => {
+const MobileNav = ({ homeRef, aboutRef, projectRef, contactRef }) => {
+
+    const navigation = [
+        { id: 1, label: "Home", icon: <HomeIcon />, ref: homeRef },
+        { id: 2, label: "About", icon: <AboutIcon />, ref: aboutRef },
+        { id: 3, label: "Project", icon: <ProjectIcon />, ref: projectRef },
+        { id: 4, label: "Contact", icon: <ContactIcon />, ref: contactRef },
+    ]
 
     const [value, setValue] = useState(0);
+
+    const handleScroll = (e, newValue) => {
+        setValue(newValue);
+        window.scrollTo({
+            top: navigation[newValue].ref.current.offsetTop,
+            behavior: "smooth"
+        })
+    };
 
     return (
         <Paper elevation={1} sx={{
@@ -20,27 +35,26 @@ const MobileNav = () => {
             left: 0,
             right: 0,
             zIndex: '10',
-            display: { md: "block", lg: "none" }
+            display: { md: "block", lg: "none" },
         }}>
             <BottomNavigation
                 showLabels
                 value={value}
-                onChange={(event, newValue) => {
-                    setValue(newValue);
-                }}
+                onChange={handleScroll}
                 sx={{
-                    backgroundColor: "#000000",
                     '& .MuiBottomNavigationAction-label': {
                         fontWeight: 500,
                         color: '#FFFFFF',
+                        marginTop: "3px"
                     },
-                    height: "55px"
+                    height: "55px",
+                    backgroundColor: "#2D3142",
+                    backdropFilter: "blur(5px)"
                 }}
             >
-                <BottomNavigationAction label="Home" icon={<HomeIcon />} />
-                <BottomNavigationAction label="About" icon={<AboutIcon />} />
-                <BottomNavigationAction label="Projects" icon={<ProjectIcon />} />
-                <BottomNavigationAction label="Contact" icon={<ContactIcon />} />
+                {navigation.map(data => (
+                    <BottomNavigationAction key={data.id} label={data.label} icon={data.icon} />
+                ))}
             </BottomNavigation>
         </Paper>
     );

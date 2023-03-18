@@ -10,6 +10,7 @@ import Contact from "@/components/contact";
 import Hero from "@/components/hero";
 import Projects from "@/components/projects";
 import MobileNav from "@/components/navbar/MobileNav";
+import Nav from "@/components/navbar/Nav";
 
 const Home = () => {
 
@@ -20,9 +21,9 @@ const Home = () => {
 
     return (
         <>
-            {/* <Header homeRef={homeRef} aboutRef={aboutRef} contactRef={contactRef} projectRef={projectRef} /> */}
-            <MobileNav />
-            <Container maxWidth={"sm"}>
+            <Nav homeRef={homeRef} aboutRef={aboutRef} contactRef={contactRef} projectRef={projectRef} />
+            <MobileNav homeRef={homeRef} aboutRef={aboutRef} contactRef={contactRef} projectRef={projectRef} />
+            <Container maxWidth={false}>
                 <Hero homeRef={homeRef} />
                 <About aboutRef={aboutRef} />
                 <Projects projectRef={projectRef} />
