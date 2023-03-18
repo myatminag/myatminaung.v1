@@ -48,8 +48,9 @@ const MobileNav = ({ homeRef, aboutRef, projectRef, contactRef }) => {
                         marginTop: "3px"
                     },
                     height: "55px",
-                    backgroundColor: "#2D3142",
-                    backdropFilter: "blur(5px)"
+                    backgroundColor: "#1b1b1e",
+                    backdropFilter: "blur(5px)",
+                    paddingY: ""
                 }}
             >
                 {navigation.map(data => (

@@ -52,7 +52,8 @@ const Nav = ({ homeRef, aboutRef, projectRef, contactRef }) => {
             paddingY={"10px"}
             sx={{ 
                 paddingX: { xs: "16px", lg: "10%" },
-                backgroundColor: changeBgColor ? "rgba( 45, 49, 66, 0.25)" : "#101110",
+                backgroundColor: changeBgColor ? "rgba( 27, 27, 30, 0.25 )" : "#1b1b1e",
+                boxShadow: changeBgColor && "0 8px 32px 0 rgba( 16, 17, 16, 0.25 )",
                 backdropFilter: "blur(10px)"
             }}
         >
