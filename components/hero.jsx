@@ -1,41 +1,79 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 
+import { useRouter } from "next/navigation";
+import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+
+import ResumeIcon from "./icons/ResumeIcon";
 import SocialMedia from "@/components/social";
 import AnimationLottie from "@/lib/animation";
 
 const Hero = ({ homeRef }) => {
+
+    const router = useRouter();
+
     return (
-        <section ref={homeRef} className="w-full px-3 py-[10%] lg:h-screen lg:pb-0 lg:pt-[5%] lg:px-[15%]">
-            <div className="max-w-[1240px] w-full h-full lg:mx-auto lg:flex lg:justify-center lg:items-center">
-                <div className="block lg:hidden">
-                    <AnimationLottie />
-                </div>
-                <div className="">
-                    <p className="mb-4 text-[#7392b7]"> 
-                        Welcome, my name is
-                    </p>
-                    <p className="mb-4 text-white font-semibold text-2xl lg:mb-4 lg:text-5xl">
-                        Myatmin Aung
-                    </p>
-                    <p className="mb-4 font-semibold text-white text-2xl lg:text-3xl">
+        <Box ref={homeRef} minHeight={"90vh"} width={"100vw"} maxWidth={"1240px"} sx={{
+            display: { lg: "flex" },
+            justifyContent: { lg: "center" },
+            alignItems: { lg: "center" },
+            marginX: { lg: "auto" },
+            padding: { xs: "16px" }
+        }}>
+            <Box width={"350px"} sx={{ 
+                display: { xs: "block", lg: "none" },
+                marginX: "auto"
+            }}>
+                <AnimationLottie />
+            </Box>
+            <Stack direction={"row"} alignItems={"center"}>
+                <Stack direction={"column"} spacing={1} alignItems={"flex-start"}> 
+                    <Typography color={"#acd7ff"}>
+                        Welcome my name is
+                    </Typography>
+                    <Typography color={"#acd7ff"} fontWeight={600} sx={{ 
+                        fontSize: { xs: "2rem", lg: "2.8rem" } 
+                    }}>
+                        Myat Min Aung
+                    </Typography>
+                    <Typography color={"#5de4c7"} sx={{
+                        fontSize: { xs: "1.2rem", lg: "2.5rem" }
+                    }}>
                         A Full-stack Web Developer
-                    </p>     
-                    <p className="mb-2 lg:w-[550px] text-gray">
+                    </Typography>
+                    <Typography color={"#acd7ff"} sx={{ width: { lg: "450px" } }}>
                         I'm passionate about web standards and developing user-friendly website &
                         web applications.
-                    </p>             
-                    <p className="mb-6 lg:w-[550px] text-gray">
-                        I'm specializing in reactjs & nextjs for frontend and 
+                    </Typography>
+                    <Typography color={"#acd7ff"} sx={{ width: { lg: "500px" } }} paddingBottom={2}>
+                        Currently, I'm specializing in reactjs & nextjs for frontend and 
                         nodejs & expressjs for backend.
-                    </p>  
-                    <SocialMedia />
-                </div>
-                <div className="w-[350px] hidden lg:block lg:ml-auto">
+                    </Typography>
+                    <Button 
+                        onClick={() => router.push('/resume.pdf')}
+                        style={{ backgroundColor: "#5de4c7" }} 
+                        sx={{
+                            color: "#000000",
+                            paddingX: "16px"
+                        }}
+                    >
+                        <ResumeIcon />
+                        <Typography marginLeft={"5px"} fontWeight={500}>
+                            Resume
+                        </Typography>
+                    </Button>
+                </Stack>
+                <Box width={"400px"} sx={{ 
+                    display: { xs: "none", lg: "block" },
+                    marginLeft: "30px"
+                }}>
                     <AnimationLottie />
-                </div>
-            </div>
-        </section>
+                </Box>
+            </Stack>
+        </Box>
     );
 }
 

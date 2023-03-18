@@ -10,7 +10,7 @@ const Nav = ({ homeRef, aboutRef, projectRef, contactRef }) => {
 
     const navigation = [
         { id: 1, label: "Home", ref: homeRef },
-        { id: 2, label: "About", ref: aboutRef },
+        { id: 2, label: "About Me?", ref: aboutRef },
         { id: 3, label: "Project", ref: projectRef },
         { id: 4, label: "Contact", ref: contactRef },
     ];
@@ -52,7 +52,7 @@ const Nav = ({ homeRef, aboutRef, projectRef, contactRef }) => {
             paddingY={"10px"}
             sx={{ 
                 paddingX: { xs: "16px", lg: "10%" },
-                backgroundColor: changeBgColor ? "rgba( 27, 27, 30, 0.25 )" : "#1b1b1e",
+                backgroundColor: changeBgColor ? "rgba( 27, 27, 30, 0.25 )" : "#1c1e28",
                 boxShadow: changeBgColor && "0 8px 32px 0 rgba( 16, 17, 16, 0.25 )",
                 backdropFilter: "blur(10px)"
             }}
