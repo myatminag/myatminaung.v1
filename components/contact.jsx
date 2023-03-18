@@ -1,6 +1,6 @@
-const Contact = () => {
+const Contact = ({ contactRef }) => {
     return (
-        <section id="contact" className="w-full px-3 py-[10%] h-screen lg:pb-0 lg:pt-[5%] lg:px-[15%]">
+        <section ref={contactRef} className="w-full px-3 py-[10%] h-screen lg:pb-0 lg:pt-[5%] lg:px-[15%]">
             <div className="max-w-[600px] w-full h-full mx-auto flex justify-center items-center">
                 <div>
                     <p className="text-center text-white text-2xl mb-5">

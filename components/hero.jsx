@@ -4,9 +4,9 @@
 import SocialMedia from "@/components/social";
 import AnimationLottie from "@/lib/animation";
 
-const Hero = () => {
+const Hero = ({ homeRef }) => {
     return (
-        <section id="hero" className="w-full px-3 py-[10%] lg:h-screen lg:pb-0 lg:pt-[5%] lg:px-[15%]">
+        <section ref={homeRef} className="w-full px-3 py-[10%] lg:h-screen lg:pb-0 lg:pt-[5%] lg:px-[15%]">
             <div className="max-w-[1240px] w-full h-full lg:mx-auto lg:flex lg:justify-center lg:items-center">
                 <div className="block lg:hidden">
                     <AnimationLottie />

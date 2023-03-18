@@ -11,9 +11,9 @@ import backend from "@/assets/icon4.svg";
 import code from "@/assets/icon5.svg";
 import Headliner from "@/components/headliner";
 
-const About = () => {
+const About = ({ aboutRef }) => {
     return (
-        <section id="about" className="w-full px-3 pt-[25%] lg:pb-0 lg:pt-[12%] lg:px-[15%]">
+        <section ref={aboutRef} className="w-full px-3 pt-[25%] lg:pb-0 lg:pt-[12%] lg:px-[15%]">
             <div className="max-w-[1240px] w-full h-full lg:mx-auto lg:flex lg:justify-center lg:items-center">
                 <div>
                     <Headliner name={"About Me"} />
