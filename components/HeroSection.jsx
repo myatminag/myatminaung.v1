@@ -67,14 +67,16 @@ const HeroSection = ({ homeRef }) => {
                         alignItems={"center"}
                         spacing={1}
                         bgcolor={"#5de4c7"}
-                        color={"#000000"}
                         paddingX={"16px"}
                         paddingY={"8px"}
                         borderRadius={"5px"}
                         onClick={() => router.push('/resume.pdf')}
+                        sx={{
+                            cursor: "pointer"
+                        }}
                     >
                         <ResumeIcon />
-                        <Typography marginLeft={"5px"} fontWeight={500}>
+                        <Typography marginLeft={"5px"} fontWeight={500} color={"#1c1e28"}>
                             Resume
                         </Typography>
                     </Stack>
