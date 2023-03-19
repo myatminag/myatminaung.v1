@@ -46,21 +46,29 @@ const HeroSection = ({ homeRef }) => {
                     <Typography color={"#5de4c7"} fontWeight={600} sx={{
                         fontSize: { xs: "1.6rem", lg: "2.5rem" }
                     }}>
-                        A Full-stack Web Developer
+                        A full-stack Web Developer
                     </Typography>
                     <Typography color={"#acd7ff"} sx={{ 
                         width: { lg: "450px" },
                         fontSize: { xs: "1rem" }
                     }}>
-                        I'm passionate about web standards and developing user-friendly website &
-                        web applications.
+                        I build awesome things for the web specializing in Reactjs & Nextjs for the frontend 
+                        and Nodejs & Expressjs for the backend.
+                        {/* I am a full-stack web developer mainly specializing in reactjs & nextjs for frontend and
+                        nodejs & expressjs for backend. */}
                     </Typography>
                     <Typography color={"#acd7ff"} paddingBottom={2} sx={{ 
                         width: { lg: "450px" },
                         fontSize: { xs: "1rem" }
                     }}>
-                        Currently, I'm specializing in reactjs & nextjs for frontend and 
-                        nodejs & expressjs for backend.
+                        Currently, I am focusing on frontend development for building incredible ecommerces
+                        at {" "}
+                        <a 
+                            href="https://www.shopdoora.com/web-view-buy-app"
+                            style={{ color: "#5de4c7", cursor: "pointer" }}
+                        >
+                            Shopdoora
+                        </a>.
                     </Typography>
                     <Stack 
                         direction={"row"}
