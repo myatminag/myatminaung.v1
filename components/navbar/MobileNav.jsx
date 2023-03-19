@@ -3,10 +3,10 @@ import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import Paper from "@mui/material/Paper";
 
-import HomeIcon from '../icons/HomeIcon';
-import AboutIcon from '../icons/AboutIcon';
-import ProjectIcon from '../icons/ProjectIcon';
-import ContactIcon from '../icons/ContactIcon';
+import { HomeIcon } from '../icons/HomeIcon';
+import { AboutIcon } from '../icons/AboutIcon';
+import { ProjectIcon } from '../icons/ProjectIcon';
+import { ContactIcon } from '../icons/ContactIcon';
 
 const MobileNav = ({ homeRef, aboutRef, projectRef, contactRef }) => {
 
