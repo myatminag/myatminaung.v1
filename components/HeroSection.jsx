@@ -54,16 +54,16 @@ const HeroSection = ({ homeRef }) => {
                     }}>
                         I build awesome things for the web specializing in Reactjs & Nextjs for the frontend 
                         and Nodejs & Expressjs for the backend.
-                        {/* I am a full-stack web developer mainly specializing in reactjs & nextjs for frontend and
-                        nodejs & expressjs for backend. */}
                     </Typography>
                     <Typography color={"#acd7ff"} paddingBottom={2} sx={{ 
                         width: { lg: "450px" },
                         fontSize: { xs: "1rem" }
                     }}>
-                        Currently, I am focusing on frontend development for building incredible ecommerces
+                        Currently, I am focusing on frontend development for building incredible eCommerces
                         at {" "}
                         <a 
+                            target="_blank" 
+                            rel="noreferrer"
                             href="https://www.shopdoora.com/web-view-buy-app"
                             style={{ color: "#5de4c7", cursor: "pointer" }}
                         >

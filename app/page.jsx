@@ -4,10 +4,10 @@ import { useRef } from "react";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-import Footer from "@/components/footer";
-import About from "@/components/about";
-import Contact from "@/components/contact";
 import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import Footer from "@/components/footer";
+import Contact from "@/components/contact";
 import Projects from "@/components/projects";
 import MobileNav from "@/components/navbar/MobileNav";
 import Nav from "@/components/navbar/Nav";
@@ -33,7 +33,7 @@ const Home = () => {
             <MobileNav homeRef={homeRef} aboutRef={aboutRef} contactRef={contactRef} projectRef={projectRef} />
             <Container maxWidth={false} sx={{ padding: 0 }}>
                 <HeroSection homeRef={homeRef} />
-                <About aboutRef={aboutRef} />
+                <AboutSection aboutRef={aboutRef} />
                 <Projects projectRef={projectRef} />
                 <Contact contactRef={contactRef} />
             </Container>

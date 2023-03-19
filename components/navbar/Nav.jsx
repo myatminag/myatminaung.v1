@@ -54,7 +54,8 @@ const Nav = ({ homeRef, aboutRef, projectRef, contactRef }) => {
                 paddingX: { xs: "16px", lg: "10%" },
                 backgroundColor: changeBgColor ? "rgba( 27, 27, 30, 0.25 )" : "#1c1e28",
                 boxShadow: changeBgColor && "0 8px 32px 0 rgba( 16, 17, 16, 0.25 )",
-                backdropFilter: "blur(10px)"
+                backdropFilter: "blur(10px)",
+                zIndex: 10
             }}
         >
             <Typography fontSize={"1.4rem"} fontWeight={400} letterSpacing={1.8} color={"#FFFFFF"}>
