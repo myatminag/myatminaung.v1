@@ -68,30 +68,30 @@ const AboutSection = ({ aboutRef }) => {
                             </Typography>
                             <Stack direction={"row"} alignItems={"flex-start"} spacing={4}>
                                 <Stack direction={"column"} spacing={0.5}>
-                                    <li style={{ color: "#acd7ff", fontSize: "1.1rem" }}>
+                                    <li style={{ color: "#acd7ff" }}>
                                         JavaScript
                                     </li>
-                                    <li style={{ color: "#acd7ff", fontSize: "1.1rem" }}>
+                                    <li style={{ color: "#acd7ff" }}>
                                         TypeScript
                                     </li>
-                                    <li style={{ color: "#acd7ff", fontSize: "1.1rem" }}>
+                                    <li style={{ color: "#acd7ff" }}>
                                         Reactjs
                                     </li>
-                                    <li style={{ color: "#acd7ff", fontSize: "1.1rem" }}>
+                                    <li style={{ color: "#acd7ff" }}>
                                         Nextjs
                                     </li>
                                 </Stack>
                                 <Stack direction={"column"} spacing={0.5}>
-                                    <li style={{ color: "#acd7ff", fontSize: "1.1rem" }}>
+                                    <li style={{ color: "#acd7ff" }}>
                                         Nodejs
                                     </li>
-                                    <li style={{ color: "#acd7ff", fontSize: "1.1rem" }}>
+                                    <li style={{ color: "#acd7ff" }}>
                                         Expressjs
                                     </li>
-                                    <li style={{ color: "#acd7ff", fontSize: "1.1rem" }}>
+                                    <li style={{ color: "#acd7ff" }}>
                                         Mongodb
                                     </li>
-                                    <li style={{ color: "#acd7ff", fontSize: "1.1rem" }}>
+                                    <li style={{ color: "#acd7ff" }}>
                                         Mysql
                                     </li>
                                 </Stack>
@@ -150,30 +150,30 @@ const AboutSection = ({ aboutRef }) => {
                             </Typography>
                             <Stack direction={"row"} alignItems={"flex-start"} spacing={4}>
                                 <Stack direction={"column"} spacing={0.5}>
-                                    <li style={{ color: "#acd7ff", fontSize: "1.1rem" }}>
+                                    <li style={{ color: "#acd7ff" }}>
                                         JavaScript
                                     </li>
-                                    <li style={{ color: "#acd7ff", fontSize: "1.1rem" }}>
+                                    <li style={{ color: "#acd7ff" }}>
                                         TypeScript
                                     </li>
-                                    <li style={{ color: "#acd7ff", fontSize: "1.1rem" }}>
+                                    <li style={{ color: "#acd7ff" }}>
                                         Reactjs
                                     </li>
-                                    <li style={{ color: "#acd7ff", fontSize: "1.1rem" }}>
+                                    <li style={{ color: "#acd7ff" }}>
                                         Nextjs
                                     </li>
                                 </Stack>
                                 <Stack direction={"column"} spacing={0.5}>
-                                    <li style={{ color: "#acd7ff", fontSize: "1.1rem" }}>
+                                    <li style={{ color: "#acd7ff" }}>
                                         Nodejs
                                     </li>
-                                    <li style={{ color: "#acd7ff", fontSize: "1.1rem" }}>
+                                    <li style={{ color: "#acd7ff" }}>
                                         Expressjs
                                     </li>
-                                    <li style={{ color: "#acd7ff", fontSize: "1.1rem" }}>
+                                    <li style={{ color: "#acd7ff" }}>
                                         Mongodb
                                     </li>
-                                    <li style={{ color: "#acd7ff", fontSize: "1.1rem" }}>
+                                    <li style={{ color: "#acd7ff" }}>
                                         Mysql
                                     </li>
                                 </Stack>
