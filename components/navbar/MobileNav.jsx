@@ -3,17 +3,17 @@ import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import Paper from "@mui/material/Paper";
 
-import { HomeIcon } from '../icons/HomeIcon';
 import { AboutIcon } from '../icons/AboutIcon';
 import { ProjectIcon } from '../icons/ProjectIcon';
 import { ContactIcon } from '../icons/ContactIcon';
+import { ExpIcon } from '../icons/ExpIcon';
 
-const MobileNav = ({ homeRef, aboutRef, projectRef, contactRef }) => {
+const MobileNav = ({ aboutRef, expRef, projectRef, contactRef }) => {
 
     const navigation = [
-        { id: 1, label: "Home", icon: <HomeIcon />, ref: homeRef },
-        { id: 2, label: "About", icon: <AboutIcon />, ref: aboutRef },
-        { id: 3, label: "Project", icon: <ProjectIcon />, ref: projectRef },
+        { id: 1, label: "About Me?", icon: <AboutIcon />, ref: aboutRef },
+        { id: 2, label: "Experience", icon: <ProjectIcon />, ref: expRef },
+        { id: 3, label: "Project", icon: <ExpIcon />, ref: projectRef },
         { id: 4, label: "Contact", icon: <ContactIcon />, ref: contactRef },
     ]
 

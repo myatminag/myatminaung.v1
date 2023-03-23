@@ -3,7 +3,9 @@ import Box from "@mui/material/Box"
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 
+
 import profilePic from "@/assets/myProfile.jpeg"; 
+import AnimateHeading from "./AnimateHeading";
 
 const AboutSection = ({ aboutRef }) => {
     return (
@@ -20,18 +22,7 @@ const AboutSection = ({ aboutRef }) => {
             }}
         >
             <Box>
-                <Typography 
-                    paddingTop={6}
-                    color={"#FFFFFF"} 
-                    fontSize={"1.2rem"} 
-                    textAlign={"center"}
-                    
-                    sx={{
-                        textDecoration: "underline"
-                    }}
-                >
-                    About Me?
-                </Typography>
+                <AnimateHeading title={"About Me."} />
                 {/* ----- mobile view ----- */}
                 <Stack direction={"column"} spacing={2} marginTop={6} sx={{ 
                     display: { xs: "block", lg: "none" }
