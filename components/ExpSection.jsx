@@ -23,7 +23,7 @@ const ExpSection = ({ expRef }) => {
             <Box>
                 <AnimateHeading title={"Experience."} />
                 {/* ----- mobile view ----- */}
-                <Stack direction={"column"} spacing={5} marginTop={4}>
+                <Stack direction={"column"} spacing={2.5} marginTop={4}>
                     {ExpJson.map(data => (
                         <Stack key={data.id} bgcolor="#313340" direction={"column"} spacing={2} padding={"32px 16px"} borderRadius={"10px"}>
                             <Stack direction={"column"} spacing={0.5}>
