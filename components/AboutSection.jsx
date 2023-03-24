@@ -3,7 +3,6 @@ import Box from "@mui/material/Box"
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 
-
 import profilePic from "@/assets/myProfile.jpeg"; 
 import AnimateHeading from "./AnimateHeading";
 
