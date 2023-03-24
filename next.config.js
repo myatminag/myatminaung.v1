@@ -13,7 +13,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["cdn.sanity.io"],
+    domains: ["res.cloudinary.com"],
   },
 }
 

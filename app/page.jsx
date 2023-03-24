@@ -11,7 +11,7 @@ import AboutSection from "@/components/AboutSection";
 import ExpSection from "@/components/ExpSection";
 import Footer from "@/components/footer";
 import Contact from "@/components/contact";
-import Projects from "@/components/projects";
+import ProjectSection from "@/components/ProjectSection";
 
 const CustomTheme = createTheme({
     typography: {
@@ -36,7 +36,7 @@ const Home = () => {
                 <HeroSection />
                 <AboutSection aboutRef={aboutRef} />
                 <ExpSection expRef={expRef} />
-                <Projects projectRef={projectRef} />
+                <ProjectSection projectRef={projectRef} />
                 <Contact contactRef={contactRef} />
             </Container>
             <Footer />
