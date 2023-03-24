@@ -18,11 +18,12 @@ const AboutSection = ({ aboutRef }) => {
                 justifyContent: { lg: "center" },
                 alignItems: { lg: "center" },
                 marginX: { lg: "auto" },
-                padding: { xs: "16px" }
+                paddingY: { xs: "5rem" },
+                paddingX: { xs: "16px" }
             }}
         >
             <Box>
-                <AnimateHeading title={"About Me."} />
+                <AnimateHeading title={"Biography."} />
                 {/* ----- mobile view ----- */}
                 <Stack direction={"column"} spacing={2} marginTop={6} sx={{ 
                     display: { xs: "block", lg: "none" }
@@ -59,30 +60,30 @@ const AboutSection = ({ aboutRef }) => {
                             </Typography>
                             <Stack direction={"row"} alignItems={"flex-start"} spacing={4}>
                                 <Stack direction={"column"} spacing={0.5}>
-                                    <li style={{ color: "#acd7ff" }}>
+                                    <li style={{ color: "#acd7ff", fontSize: "1rem" }}>
                                         JavaScript
                                     </li>
-                                    <li style={{ color: "#acd7ff" }}>
+                                    <li style={{ color: "#acd7ff", fontSize: "1rem" }}>
                                         TypeScript
                                     </li>
-                                    <li style={{ color: "#acd7ff" }}>
+                                    <li style={{ color: "#acd7ff", fontSize: "1rem" }}>
                                         Reactjs
                                     </li>
-                                    <li style={{ color: "#acd7ff" }}>
+                                    <li style={{ color: "#acd7ff", fontSize: "1rem" }}>
                                         Nextjs
                                     </li>
                                 </Stack>
                                 <Stack direction={"column"} spacing={0.5}>
-                                    <li style={{ color: "#acd7ff" }}>
+                                    <li style={{ color: "#acd7ff", fontSize: "1rem" }}>
                                         Nodejs
                                     </li>
-                                    <li style={{ color: "#acd7ff" }}>
+                                    <li style={{ color: "#acd7ff", fontSize: "1rem" }}>
                                         Expressjs
                                     </li>
-                                    <li style={{ color: "#acd7ff" }}>
+                                    <li style={{ color: "#acd7ff", fontSize: "1rem" }}>
                                         Mongodb
                                     </li>
-                                    <li style={{ color: "#acd7ff" }}>
+                                    <li style={{ color: "#acd7ff", fontSize: "1rem" }}>
                                         Mysql
                                     </li>
                                 </Stack>
@@ -92,7 +93,7 @@ const AboutSection = ({ aboutRef }) => {
                             <Typography fontWeight={600} fontSize={"1.3rem"} color={"#5de4c7"}>
                                 Educational Background,
                             </Typography>
-                            <li style={{ color: "#acd7ff", fontSize: "1.1rem" }}>
+                            <li style={{ color: "#acd7ff", fontSize: "1rem" }}>
                                 2nd year major in mechanical engineering
                             </li>
                         </Stack>

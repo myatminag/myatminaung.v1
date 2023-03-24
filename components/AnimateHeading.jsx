@@ -25,7 +25,7 @@ const AnimateHeading = ({ title }) => {
                 fontWeight={700}
                 letterSpacing={1.5}
                 position={"absolute"}
-                left={9}
+                left={12}
             >
                 {title}
             </Typography>
