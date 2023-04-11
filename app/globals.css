@@ -17,3 +17,47 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* ----- button ----- */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 180px;
+  height: 50px;
+  line-height: 40px;
+  font-size: 14px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #5de4c7;
+  border: 1px solid #5de4c7;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.btn p {
+  position: relative;
+  z-index: 2;
+}
+
+.btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #5de4c7;
+  transition: all .35s;
+}
+
+.btn:hover {
+  color: #1c1e28;
+}
+
+.btn:hover:after {
+  width: 100%;
+}

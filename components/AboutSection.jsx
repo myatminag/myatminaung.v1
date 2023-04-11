@@ -1,7 +1,4 @@
 import Image from "next/image";
-import Box from "@mui/material/Box"
-import Typography from "@mui/material/Typography";
-import Stack from "@mui/material/Stack";
 
 import profilePic from "@/assets/myProfile.jpeg"; 
 import AnimateHeading from "./AnimateHeading";
@@ -9,183 +6,39 @@ import AnimationLottie from "@/lib/animation";
 
 const AboutSection = ({ aboutRef }) => {
     return (
-        <Box 
-            ref={aboutRef} 
-            width={"100vw"} 
-            maxWidth={"1240px"} 
-            sx={{
-                display: { lg: "flex" },
-                justifyContent: { lg: "center" },
-                alignItems: { lg: "center" },
-                marginX: { lg: "auto" },
-                paddingY: { xs: "5rem" },
-                paddingX: { xs: "16px" }
-            }}
-        >
-            <Box>
-                <AnimateHeading title={"Biography."} />
-                
-                <Stack direction={"column"} spacing={2} marginTop={6} sx={{ 
-                    display: { xs: "block", lg: "none" }
-                }}>
-                    <Box sx={{
-                        width: "280px",
-                        height: "280px",
-                        position: "relative",
-                        border: "1px solid #5de4c7",
-                        borderRadius: "10px",
-                        marginX: "auto"
-                    }}>
-                        <Image 
-                            src={profilePic}
-                            alt="profile-pic" 
-                            fill
-                            style={{
-                                borderRadius: "10px",
-                            }}
-                        />
-                    </Box>
-                    <Stack direction={"column"} spacing={2}>
-                        <Typography color={"#acd7ff"} sx={{
-                            width: { lg: "450px" }
-                        }}>
-                            I am a full-stack web developer from Yangon, Myanmar. I began to interest in
-                            web development with scratch when I firstly learned programming at CS50. After
-                            learning over a year, I have a dab hand at both frontend and backend development,
-                            utilizing my background knowledges and problems-solving to bring some unique things.
-                        </Typography>
-                        <Stack direction={"column"} spacing={1}>
-                            <Typography fontWeight={600} fontSize={"1.3rem"} color={"#5de4c7"}>
-                                Tech stacks currently working with,
-                            </Typography>
-                            <Stack direction={"row"} alignItems={"flex-start"} spacing={4}>
-                                <Stack direction={"column"} spacing={0.5}>
-                                    <li style={{ color: "#acd7ff", fontSize: "1rem" }}>
-                                        JavaScript
-                                    </li>
-                                    <li style={{ color: "#acd7ff", fontSize: "1rem" }}>
-                                        TypeScript
-                                    </li>
-                                    <li style={{ color: "#acd7ff", fontSize: "1rem" }}>
-                                        Reactjs
-                                    </li>
-                                    <li style={{ color: "#acd7ff", fontSize: "1rem" }}>
-                                        Nextjs
-                                    </li>
-                                </Stack>
-                                <Stack direction={"column"} spacing={0.5}>
-                                    <li style={{ color: "#acd7ff", fontSize: "1rem" }}>
-                                        Nodejs
-                                    </li>
-                                    <li style={{ color: "#acd7ff", fontSize: "1rem" }}>
-                                        Expressjs
-                                    </li>
-                                    <li style={{ color: "#acd7ff", fontSize: "1rem" }}>
-                                        Mongodb
-                                    </li>
-                                    <li style={{ color: "#acd7ff", fontSize: "1rem" }}>
-                                        Mysql
-                                    </li>
-                                </Stack>
-                            </Stack>
-                        </Stack>
-                        <Stack direction={"column"} spacing={1}>
-                            <Typography fontWeight={600} fontSize={"1.3rem"} color={"#5de4c7"}>
-                                Educational Background,
-                            </Typography>
-                            <li style={{ color: "#acd7ff", fontSize: "1rem" }}>
-                                2nd year major in mechanical engineering
-                            </li>
-                        </Stack>
-                    </Stack>
-                </Stack>
-                <Stack marginTop={4} sx={{
-                    width: "100%",
-                    display: { xs: "none", lg: "flex" },
-                    flexDirection: { lg: "row" },
-                    justifyContent: { lg: "space-between" },
-                    gap: "6rem"
-                }}>
-                    <Stack direction={"column"} spacing={2}>
-                        <Typography color={"#acd7ff"}>
-                            I am a full-stack web developer from Yangon, Myanmar. I began to interest in
-                            web development with scratch when I firstly learned programming at CS50. After
-                            learning over a year, I have a dab hand at both frontend and backend development,
-                            utilizing my background knowledges and problems-solving to bring some unique things.
-                        </Typography>
-                        <Typography color={"#acd7ff"}>
-                            Here is my tech stacks currently working with,
-                        </Typography>
-                        {/* <Stack direction={"column"} spacing={1}>
-                            <Typography fontWeight={600} fontSize={"1.3rem"} color={"#5de4c7"}>
-                                Tech stacks currently working with,
-                            </Typography>
-                            <Stack direction={"row"} alignItems={"flex-start"} spacing={4}>
-                                <Stack direction={"column"} spacing={0.5}>
-                                    <li style={{ color: "#acd7ff" }}>
-                                        JavaScript
-                                    </li>
-                                    <li style={{ color: "#acd7ff" }}>
-                                        TypeScript
-                                    </li>
-                                    <li style={{ color: "#acd7ff" }}>
-                                        Reactjs
-                                    </li>
-                                    <li style={{ color: "#acd7ff" }}>
-                                        Nextjs
-                                    </li>
-                                </Stack>
-                                <Stack direction={"column"} spacing={0.5}>
-                                    <li style={{ color: "#acd7ff" }}>
-                                        Nodejs
-                                    </li>
-                                    <li style={{ color: "#acd7ff" }}>
-                                        Expressjs
-                                    </li>
-                                    <li style={{ color: "#acd7ff" }}>
-                                        Mongodb
-                                    </li>
-                                    <li style={{ color: "#acd7ff" }}>
-                                        Mysql
-                                    </li>
-                                </Stack>
-                            </Stack>
-                        </Stack>
-                        <Stack direction={"column"} spacing={1}>
-                            <Typography fontWeight={600} fontSize={"1.3rem"} color={"#5de4c7"}>
-                                Educational Background,
-                            </Typography>
-                            <li style={{ color: "#acd7ff", fontSize: "1.1rem" }}>
-                                2nd year major in mechanical engineering
-                            </li>
-                        </Stack> */}
-                    </Stack>
-                    <Box width={"400px"} sx={{ 
-                        
-                        marginX: "auto"
-                    }}>
+        <section ref={aboutRef} className="lg:pb-0 lg:px-[15%]">
+            <div className="max-w-[1240px] min-h-[90vh] lg:mx-auto lg:flex lg:justify-center lg:items-center">
+                <div className="w-[100%] lg:flex lg:items-center lg:justify-evenly">
+                    <div className="block lg:hidden">
                         <AnimationLottie />
-                    </Box>
-                    {/* <Box sx={{
-                        width: "250px",
-                        height: "250px",
-                        position: "relative",
-                        border: "1px solid #5de4c7",
-                        borderRadius: "10px",
-                        marginX: "auto"
-                    }}>
-                        <Image 
-                            src={profilePic}
-                            alt="profile-pic" 
-                            fill
-                            style={{
-                                borderRadius: "10px",
-                            }}
-                        />
-                    </Box> */}
-                </Stack>
-            </Box>
-        </Box>
+                    </div>
+                    <div>
+                        <header className="mb-4 text-[2rem] font-[600] text-primaryColor">
+                            About Me?
+                        </header>
+                        <p className="mb-3 lg:w-[550px] 2xl:w-[650px] text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                            Hi, I am Myat Min Aung. I am a Full-stack Web Developer from Yangon, Myanmar. I have serious 
+                            a passion for developing dynamic user experiences and creating intuitive.
+                        </p>
+                        <p className="mb-3 lg:w-[550px] 2xl:w-[650px] text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                            Back to a few year, I began to interest in web development with scratch when I firstly learned about 
+                            programming at CS50 course. After learning over a year, I have a dab hand at both frontend and 
+                            backend development.
+                        </p>             
+                        <p className="mb-2 lg:w-[550px] 2xl:w-[650px] text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                            Interesting in the entire web standards spectrum, I like to develop on ambititous projects with 
+                            positive people over the course of my life and career.
+                        </p>
+                        <p className="mb-2 lg:w-[550px] 2xl:w-[650px] text-primaryColor xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                            {"Let's"} build something special...
+                        </p>
+                    </div>
+                    <div className="w-[380px] hidden lg:block">
+                        <AnimationLottie />
+                    </div>
+                </div>
+            </div>
+        </section>
     );
 }
 

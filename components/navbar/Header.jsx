@@ -40,7 +40,11 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
     }, []);
 
     return (
-        <nav className="sticky top-0 z-50">
+        <nav className={
+                changeBgColor ? 
+                "sticky top-0 z-50 bg-[rgba(27, 27, 30, 0.25)] backdrop-blur-[10px] shadow-[0 8px 32px 0 rgba( 16, 17, 16, 0.25 )]" : 
+                "sticky top-0 z-50"
+            }>
             <div className="flex items-center justify-between py-3 px-3 lg:px-[10%]">
                 <p className="text-[#FFFFFF] text-[1.4rem] font-[400] tracking-wider">
                     Mma.dev
@@ -52,7 +56,7 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
                         </p>
                     ))}
                 </div>
-                <button>
+                <button className="block lg:hidden">
                     <LightIcon />
                 </button>
             </div>
