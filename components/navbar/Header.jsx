@@ -41,17 +41,20 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
 
     return (
         <nav className="sticky top-0 z-50">
-            <div className="flex items-start justify-between py-6 px-3 lg:px-[10%]">
+            <div className="flex items-center justify-between py-3 px-3 lg:px-[10%]">
                 <p className="text-[#FFFFFF] text-[1.4rem] font-[400] tracking-wider">
                     Mma.dev
                 </p>
-                <div className="flex items-center gap-x-12">
+                <div className="hidden lg:flex lg:items-center lg:gap-x-12">
                     {navigation.map(nav => (
                         <p key={nav.id} onClick={() => handleScroll(nav.ref)} className="text-[#FFFFFF] cursor-pointer">
                             {nav.label}
                         </p>
                     ))}
                 </div>
+                <button>
+                    <LightIcon />
+                </button>
             </div>
         </nav>
     );
