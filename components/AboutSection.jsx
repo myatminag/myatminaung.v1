@@ -5,6 +5,7 @@ import Stack from "@mui/material/Stack";
 
 import profilePic from "@/assets/myProfile.jpeg"; 
 import AnimateHeading from "./AnimateHeading";
+import AnimationLottie from "@/lib/animation";
 
 const AboutSection = ({ aboutRef }) => {
     return (
@@ -23,7 +24,7 @@ const AboutSection = ({ aboutRef }) => {
         >
             <Box>
                 <AnimateHeading title={"Biography."} />
-                {/* ----- mobile view ----- */}
+                
                 <Stack direction={"column"} spacing={2} marginTop={6} sx={{ 
                     display: { xs: "block", lg: "none" }
                 }}>
@@ -98,7 +99,6 @@ const AboutSection = ({ aboutRef }) => {
                         </Stack>
                     </Stack>
                 </Stack>
-                {/* ----- web view ----- */}
                 <Stack marginTop={4} sx={{
                     width: "100%",
                     display: { xs: "none", lg: "flex" },
@@ -106,27 +106,8 @@ const AboutSection = ({ aboutRef }) => {
                     justifyContent: { lg: "space-between" },
                     gap: "6rem"
                 }}>
-                    <Box sx={{
-                        width: "280px",
-                        height: "280px",
-                        position: "relative",
-                        border: "1px solid #5de4c7",
-                        borderRadius: "10px",
-                        marginX: "auto"
-                    }}>
-                        <Image 
-                            src={profilePic}
-                            alt="profile-pic" 
-                            fill
-                            style={{
-                                borderRadius: "10px",
-                            }}
-                        />
-                    </Box>
                     <Stack direction={"column"} spacing={2}>
-                        <Typography color={"#acd7ff"} sx={{
-                            width: { lg: "450px" }
-                        }}>
+                        <Typography color={"#acd7ff"}>
                             I am a full-stack web developer from Yangon, Myanmar. I began to interest in
                             web development with scratch when I firstly learned programming at CS50. After
                             learning over a year, I have a dab hand at both frontend and backend development,
@@ -135,7 +116,7 @@ const AboutSection = ({ aboutRef }) => {
                         <Typography color={"#acd7ff"}>
                             Here is my tech stacks currently working with,
                         </Typography>
-                        <Stack direction={"column"} spacing={1}>
+                        {/* <Stack direction={"column"} spacing={1}>
                             <Typography fontWeight={600} fontSize={"1.3rem"} color={"#5de4c7"}>
                                 Tech stacks currently working with,
                             </Typography>
@@ -177,8 +158,31 @@ const AboutSection = ({ aboutRef }) => {
                             <li style={{ color: "#acd7ff", fontSize: "1.1rem" }}>
                                 2nd year major in mechanical engineering
                             </li>
-                        </Stack>
+                        </Stack> */}
                     </Stack>
+                    <Box width={"400px"} sx={{ 
+                        
+                        marginX: "auto"
+                    }}>
+                        <AnimationLottie />
+                    </Box>
+                    {/* <Box sx={{
+                        width: "250px",
+                        height: "250px",
+                        position: "relative",
+                        border: "1px solid #5de4c7",
+                        borderRadius: "10px",
+                        marginX: "auto"
+                    }}>
+                        <Image 
+                            src={profilePic}
+                            alt="profile-pic" 
+                            fill
+                            style={{
+                                borderRadius: "10px",
+                            }}
+                        />
+                    </Box> */}
                 </Stack>
             </Box>
         </Box>

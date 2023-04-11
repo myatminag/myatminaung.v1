@@ -1,8 +1,6 @@
 "use client"
 
 import { useRef } from "react";
-import Container from "@mui/material/Container";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import Header from "@/components/navbar/Header";
 import BottomNav from "@/components/navbar/BottomNav";
@@ -13,14 +11,6 @@ import Footer from "@/components/footer";
 import Contact from "@/components/contact";
 import ProjectSection from "@/components/ProjectSection";
 
-const CustomTheme = createTheme({
-    typography: {
-        fontFamily: [
-            "Sarabun", "sans-serif"
-        ].join(",")
-    }
-})
-
 const Home = () => {
 
     const aboutRef = useRef(null);
@@ -29,18 +19,18 @@ const Home = () => {
     const expRef = useRef(null);
 
     return (
-        <ThemeProvider theme={CustomTheme}>
+        <>
             <Header aboutRef={aboutRef} expRef={expRef} contactRef={contactRef} projectRef={projectRef} />
-            <BottomNav aboutRef={aboutRef} expRef={expRef} contactRef={contactRef} projectRef={projectRef} />
-            <Container maxWidth={false} sx={{ padding: 0 }}>
+            {/* <BottomNav aboutRef={aboutRef} expRef={expRef} contactRef={contactRef} projectRef={projectRef} /> */}
+            <main className="px-4 lg:px-0">
                 <HeroSection />
-                <AboutSection aboutRef={aboutRef} />
-                <ExpSection expRef={expRef} />
-                <ProjectSection projectRef={projectRef} />
-                <Contact contactRef={contactRef} />
-            </Container>
-            <Footer />
-        </ThemeProvider>
+                {/* <AboutSection aboutRef={aboutRef} /> */}
+                {/* <ExpSection expRef={expRef} /> */}
+                {/* <ProjectSection projectRef={projectRef} /> */}
+                {/* <Contact contactRef={contactRef} /> */}
+            </main>
+            {/* <Footer /> */}
+        </>
     );
 }
 

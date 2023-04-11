@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import { useRouter } from "next/navigation";
@@ -14,53 +13,27 @@ const HeroSection = ({ homeRef }) => {
     const router = useRouter();
 
     return (
-        <Box 
-            ref={homeRef} 
-            minHeight={"90vh"} 
-            width={"100vw"} 
-            maxWidth={"1240px"} 
-            sx={{
-                display: { lg: "flex" },
-                justifyContent: { lg: "center" },
-                alignItems: { lg: "center" },
-                marginX: { lg: "auto" },
-                padding: { xs: "16px" }
-            }}
-        >
-            <Box width={"350px"} sx={{ 
-                display: { xs: "block", lg: "none" },
-                marginX: "auto"
-            }}>
-                <AnimationLottie />
-            </Box>
-            <Stack direction={"row"} alignItems={"center"}>
-                <Stack direction={"column"} spacing={1} alignItems={"flex-start"}> 
-                    <Typography color={"#acd7ff"}>
+        <section ref={homeRef} className="lg:pb-0 lg:px-[15%]">
+            <div className="max-w-[1240px] min-h-[90vh] lg:mx-auto lg:flex lg:justify-center lg:items-center">
+                <div className="block lg:hidden">
+                    <AnimationLottie />
+                </div>
+                <div className="">
+                    <p className="mb-2 text-[#acd7ff]"> 
                         Welcome, my name is
-                    </Typography>
-                    <Typography color={"#acd7ff"} fontWeight={600} sx={{ 
-                        fontSize: { xs: "2.3rem", lg: "2.8rem" } 
-                    }}>
+                    </p>
+                    <p className="mb-2 text-white font-semibold text-[1.6rem] xl:text-[2.4rem] 2xl:text-[3.2rem]">
                         Myat Min Aung
-                    </Typography>
-                    <Typography color={"#5de4c7"} fontWeight={600} sx={{
-                        fontSize: { xs: "1.6rem", lg: "2.5rem" }
-                    }}>
-                        A full-stack Web Developer
-                    </Typography>
-                    <Typography color={"#acd7ff"} sx={{ 
-                        width: { lg: "450px" },
-                        fontSize: { xs: "1rem" }
-                    }}>
-                        I build awesome things for the web specializing in Reactjs & Nextjs for the frontend 
-                        and Nodejs & Expressjs for the backend.
-                    </Typography>
-                    <Typography color={"#acd7ff"} paddingBottom={2} sx={{ 
-                        width: { lg: "450px" },
-                        fontSize: { xs: "1rem" }
-                    }}>
-                        Currently, I am focusing on frontend development for building incredible eCommerces
-                        at {" "}
+                    </p>
+                    <p className="mb-2 font-semibold text-[#5de4c7] text-[1.6rem] xl:text-[2.4rem] 2xl:text-[3.2rem]">
+                        A Full-stack Web Developer
+                    </p>     
+                    <p className="mb-2 lg:w-[550px] 2xl:w-[650px] text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                        I build awesome things for the web specializing in Reactjs & Nextjs 
+                        for the frontend and Nodejs & Expressjs for the backend.
+                    </p>             
+                    <p className="mb-6 lg:w-[550px] 2xl:w-[650px] text-[#acd7ff] xl:text-[1.1em] 2xl:text-[1.5rem]">
+                        Currently, I am focusing on frontend development for building incredible eCommerces at {" "}
                         <a 
                             target="_blank" 
                             rel="noreferrer"
@@ -69,34 +42,22 @@ const HeroSection = ({ homeRef }) => {
                         >
                             Shopdoora
                         </a>.
-                    </Typography>
-                    <Stack 
-                        direction={"row"}
-                        alignItems={"center"}
-                        spacing={1}
-                        bgcolor={"#5de4c7"}
-                        paddingX={"16px"}
-                        paddingY={"8px"}
-                        borderRadius={"5px"}
-                        onClick={() => router.push('/resume.pdf')}
-                        sx={{
-                            cursor: "pointer"
-                        }}
+                    </p>  
+                    <button 
+                        onClick={() => router.push("/resume.pdf")}
+                        className="flex items-center gap-x-1 px-4 py-2 border rounded-md border-[#5de4c7]"
                     >
                         <ResumeIcon />
-                        <Typography marginLeft={"5px"} fontWeight={500} color={"#1c1e28"}>
+                        <p className="text-[#5de4c7]">
                             Resume
-                        </Typography>
-                    </Stack>
-                </Stack>
-                <Box width={"400px"} sx={{ 
-                    display: { xs: "none", lg: "block" },
-                    marginLeft: "30px"
-                }}>
+                        </p>
+                    </button>
+                </div>
+                <div className="w-[380px] hidden lg:block">
                     <AnimationLottie />
-                </Box>
-            </Stack>
-        </Box>
+                </div>
+            </div>
+        </section>
     );
 }
 

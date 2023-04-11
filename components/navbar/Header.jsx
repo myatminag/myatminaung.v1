@@ -43,53 +43,60 @@ const Header = ({ homeRef, aboutRef, projectRef, contactRef }) => {
     }, []);
 
     return (
-        <Stack 
-            direction={"row"} 
-            justifyContent={"space-between"} 
-            alignItems={"center"} 
-            position={"sticky"} 
-            top={0} 
-            paddingY={"10px"}
-            sx={{ 
-                paddingX: { xs: "16px", lg: "10%" },
-                backgroundColor: changeBgColor ? "rgba( 27, 27, 30, 0.25 )" : "#1c1e28",
-                boxShadow: changeBgColor && "0 8px 32px 0 rgba( 16, 17, 16, 0.25 )",
-                backdropFilter: "blur(10px)",
-                zIndex: 10
-            }}
-        >
-            <Typography fontSize={"1.4rem"} fontWeight={400} letterSpacing={1.8} color={"#FFFFFF"}>
-                Mma.dev
-            </Typography>
-            <Stack direction={"row"} alignItems={"center"} spacing={6}>
-                <Stack direction={"row"} alignItems={"center"} spacing={6} sx={{
-                    display: { xs: "none", md: "none", lg: "flex" }
-                }}>
-                    {navigation.map(data => (
-                        <Typography 
-                            onClick={() => handleScroll(data.ref)} 
-                            key={data.id} 
-                            color={"#FFFFFF"}
-                            sx={{
-                                cursor: "pointer"
-                            }}
-                        >
-                            {data.label}
-                        </Typography>
-                    ))}
-                </Stack>
-                <IconButton 
-                    sx={{ 
-                        px: "0",
-                        '&:hover': {
-                            backgroundColor: "transparent"
-                        }
-                    }}
-                >
-                    <LightIcon />
-                </IconButton>
-            </Stack>
-        </Stack>
+        <nav className="sticky top-0 z-50">
+            <div className="flex items-start justify-between">
+                <p className="text-[1.4rem] font-[400]">
+                    Mma.dev
+                </p>
+            </div>
+        </nav>
+        // <Stack 
+        //     direction={"row"} 
+        //     justifyContent={"space-between"} 
+        //     alignItems={"center"} 
+        //     position={"sticky"} 
+        //     top={0} 
+        //     paddingY={"10px"}
+        //     sx={{ 
+        //         paddingX: { xs: "16px", lg: "10%" },
+        //         backgroundColor: changeBgColor ? "rgba( 27, 27, 30, 0.25 )" : "#1c1e28",
+        //         boxShadow: changeBgColor && "0 8px 32px 0 rgba( 16, 17, 16, 0.25 )",
+        //         backdropFilter: "blur(10px)",
+        //         zIndex: 10
+        //     }}
+        // >
+        //     <Typography fontSize={"1.4rem"} fontWeight={400} letterSpacing={1.8} color={"#FFFFFF"}>
+        //         Mma.dev
+        //     </Typography>
+        //     <Stack direction={"row"} alignItems={"center"} spacing={6}>
+        //         <Stack direction={"row"} alignItems={"center"} spacing={6} sx={{
+        //             display: { xs: "none", md: "none", lg: "flex" }
+        //         }}>
+        //             {navigation.map(data => (
+        //                 <Typography 
+        //                     onClick={() => handleScroll(data.ref)} 
+        //                     key={data.id} 
+        //                     color={"#FFFFFF"}
+        //                     sx={{
+        //                         cursor: "pointer"
+        //                     }}
+        //                 >
+        //                     {data.label}
+        //                 </Typography>
+        //             ))}
+        //         </Stack>
+        //         <IconButton 
+        //             sx={{ 
+        //                 px: "0",
+        //                 '&:hover': {
+        //                     backgroundColor: "transparent"
+        //                 }
+        //             }}
+        //         >
+        //             <LightIcon />
+        //         </IconButton>
+        //     </Stack>
+        // </Stack>
     );
 }
 
