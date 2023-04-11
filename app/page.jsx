@@ -23,7 +23,7 @@ const Home = () => {
             <Header aboutRef={aboutRef} expRef={expRef} contactRef={contactRef} projectRef={projectRef} />
             {/* <BottomNav aboutRef={aboutRef} expRef={expRef} contactRef={contactRef} projectRef={projectRef} /> */}
             <main className="px-4 lg:px-0">
-                <HeroSection />
+                <HeroSection aboutRef={aboutRef} />
                 <AboutSection aboutRef={aboutRef} />
                 {/* <ExpSection expRef={expRef} /> */}
                 {/* <ProjectSection projectRef={projectRef} /> */}

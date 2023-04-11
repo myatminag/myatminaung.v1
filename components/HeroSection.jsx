@@ -1,16 +1,38 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
 
 import ResumeIcon from "./icons/ResumeIcon";
 import AnimationLottie from "@/lib/animation";
+import MouseIcon from "./icons/MouseIcon";
+import { handleScroll } from "@/utils/handleScroll";
 
-const HeroSection = ({ homeRef }) => {
+const HeroSection = ({ homeRef, aboutRef }) => {
 
     const router = useRouter();
 
     return (
-        <section ref={homeRef} className="lg:pb-0 lg:px-[15%]">
+        <section ref={homeRef} className="lg:pb-0 lg:px-[15%] relative">
+            <div className="lg:absolute lg:bottom-8 lg:left-[50%] lg:translate-x-[-50%]">
+                <motion.div 
+                    onClick={() => handleScroll(aboutRef)}
+                    className="lg:flex lg:flex-col lg:items-center lg:gap-y-0"
+                    transition={{
+                        duration: 1.5,
+                        repeat: Infinity,
+                        repeatType: "reverse",
+                    }}
+                    initial={{ y: "16px" }}
+                    animate={{ y: "-16px" }}
+                    exit={{ y: "16px" }}
+                >
+                    <MouseIcon />
+                    <p className="text-[#acd7ff] text-sm">
+                        Scroll
+                    </p>
+                </motion.div>
+            </div>
             <div className="max-w-[1240px] min-h-[90vh] lg:mx-auto lg:flex lg:justify-center lg:items-center">
                 <div className="w-[100%] lg:flex lg:items-center lg:justify-evenly">
                     <div className="block lg:hidden">
