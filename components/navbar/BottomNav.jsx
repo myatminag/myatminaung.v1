@@ -8,7 +8,7 @@ import { ProjectIcon } from '../icons/ProjectIcon';
 import { ContactIcon } from '../icons/ContactIcon';
 import { ExpIcon } from '../icons/ExpIcon';
 
-const MobileNav = ({ aboutRef, expRef, projectRef, contactRef }) => {
+const BottomNav = ({ aboutRef, expRef, projectRef, contactRef }) => {
 
     const navigation = [
         { id: 1, label: "About Me?", icon: <AboutIcon />, ref: aboutRef },
@@ -66,4 +66,4 @@ const MobileNav = ({ aboutRef, expRef, projectRef, contactRef }) => {
     );
 }
 
-export default MobileNav;
+export default BottomNav;

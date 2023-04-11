@@ -4,8 +4,8 @@ import { useRef } from "react";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-import MobileNav from "@/components/navbar/MobileNav";
-import Nav from "@/components/navbar/Nav";
+import Header from "@/components/navbar/Header";
+import BottomNav from "@/components/navbar/BottomNav";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ExpSection from "@/components/ExpSection";
@@ -30,8 +30,8 @@ const Home = () => {
 
     return (
         <ThemeProvider theme={CustomTheme}>
-            <Nav aboutRef={aboutRef} expRef={expRef} contactRef={contactRef} projectRef={projectRef} />
-            <MobileNav aboutRef={aboutRef} expRef={expRef} contactRef={contactRef} projectRef={projectRef} />
+            <Header aboutRef={aboutRef} expRef={expRef} contactRef={contactRef} projectRef={projectRef} />
+            <BottomNav aboutRef={aboutRef} expRef={expRef} contactRef={contactRef} projectRef={projectRef} />
             <Container maxWidth={false} sx={{ padding: 0 }}>
                 <HeroSection />
                 <AboutSection aboutRef={aboutRef} />

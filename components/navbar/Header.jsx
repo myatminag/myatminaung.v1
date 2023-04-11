@@ -6,7 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import DarkIcon from "../icons/DarkIcon";
 import LightIcon from "../icons/LightIcon";
 
-const Nav = ({ homeRef, aboutRef, projectRef, contactRef }) => {
+const Header = ({ homeRef, aboutRef, projectRef, contactRef }) => {
 
     const navigation = [
         { id: 1, label: "Home", ref: homeRef },
@@ -93,4 +93,4 @@ const Nav = ({ homeRef, aboutRef, projectRef, contactRef }) => {
     );
 }
 
-export default Nav;
+export default Header;
