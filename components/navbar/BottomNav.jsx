@@ -11,7 +11,7 @@ import { ExpIcon } from '../icons/ExpIcon';
 const BottomNav = ({ aboutRef, expRef, projectRef, contactRef }) => {
 
     const navigation = [
-        { id: 1, label: "About Me?", icon: <AboutIcon />, ref: aboutRef },
+        { id: 1, label: "About", icon: <AboutIcon />, ref: aboutRef },
         { id: 2, label: "Experience", icon: <ProjectIcon />, ref: expRef },
         { id: 3, label: "Project", icon: <ExpIcon />, ref: projectRef },
         { id: 4, label: "Contact", icon: <ContactIcon />, ref: contactRef },
