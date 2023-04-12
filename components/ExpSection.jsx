@@ -8,7 +8,6 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 
 import ExpJson from "@/assets/exp.json"
-import AnimateHeading from "./AnimateHeading";
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
   
@@ -67,8 +66,6 @@ const ExpSection = ({ expRef }) => {
                             sx={{
                                 "& .MuiButtonBase-root.MuiTab-root": {
                                     color: "#acd7ff",
-                                    // borderBottom: '1px solid',
-                                    // borderBottomColor: '#acd7ff',
                                 },
                                 "& .MuiButtonBase-root.MuiTab-root.Mui-selected": {
                                     borderBottom: '1px solid',
@@ -81,20 +78,62 @@ const ExpSection = ({ expRef }) => {
                                 },
                             }}
                         >
-                            <Tab label="Tee Htwin" {...a11yProps(0)} />
-                            <Tab label="Shopdoora" {...a11yProps(1)} />
+                            <Tab label="Shopdoora" {...a11yProps(0)} />
+                            <Tab label="Tee Htwin" {...a11yProps(1)} />
                         </Tabs>
                     </Box>
                     <TabPanel value={value} index={0}>
-                        <Typography fontSize={"1.3rem"} color={"#acd7ff"} fontWeight={500}>
+                        <Typography fontSize={"1.2rem"} color={"#acd7ff"} fontWeight={500}>
+                            Junior Front-End Developer
+                        </Typography>
+                        <Typography color={"#acd7ff"} fontSize={"1rem"} marginTop={1}>
+                            <span className="text-primaryColor italic">Shopdoora</span> | January 2023 - Present
+                        </Typography>
+                        <Stack direction={"column"} gap={1} marginTop={2}>
+                            <ul className="list-outside list-disc px-3 xl:px-0">
+                                <li className="text-primaryColor mb-2">
+                                    <p className="text-[#acd7ff] font-light xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                                        Collaborated with cross-functional teams, including designers, testers, 
+                                        and backend developers, to deliver high-quality features on tight timelines
+                                    </p>
+                                </li>
+                                <li className="text-primaryColor mb-2">
+                                    <p className="text-[#acd7ff] font-light xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                                        Developed and maintained micro-frontends using React, Next and others state managment 
+                                        like Redux, Zustand.
+                                    </p>
+                                </li>
+                                <li className="text-primaryColor mb-2">
+                                    <p className="text-[#acd7ff] font-light xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                                        Implemented responsive design strategies and mobile-first development approach to ensure 
+                                        seamless user experiences across all devices
+                                    </p>
+                                </li>
+                                <li className="text-primaryColor mb-2">
+                                    <p className="text-[#acd7ff] font-light xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                                        Worked alongside with five front-end developers for developing eCommerce service platforms
+                                        for variety of seller, retailer, and vendor.
+                                    </p>
+                                </li>
+                                <li className="text-primaryColor mb-2">
+                                    <p className="text-[#acd7ff] font-light xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                                        Implemented and shipped the front-end of Aya Zay multi-seller web app for Aya Bank 
+                                        whichs let users can buy various kinds of products at Aya Pay application.
+                                    </p>
+                                </li>
+                            </ul>
+                        </Stack>
+                    </TabPanel>
+                    <TabPanel value={value} index={1}>
+                        <Typography fontSize={"1.2rem"} color={"#acd7ff"} fontWeight={500}>
                             Junior Full-Stack Developer at <span className="text-primaryColor italic">Tee Htwin</span>
                         </Typography>
                         <Typography color={"#acd7ff"} fontSize={"1rem"} marginTop={1}>
-                            Nov 2022 - Present
+                            November 2022 - Present
                         </Typography>
                         <Stack direction={"column"} gap={1} marginTop={2}>
-                            <p className="text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus magnam sapiente ut exercitationem nobis. Repellendus.
+                            <p className="text-[#acd7ff] font-light xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                                Implementing
                             </p>
                             <p className="text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem eligendi, vitae error harum, iusto corporis sint soluta, quod quas laudantium velit odio minus mollitia voluptate rem! Quis necessitatibus dolor vero!
@@ -103,25 +142,6 @@ const ExpSection = ({ expRef }) => {
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse illo dolorum inventore?
                             </p>
                         </Stack> 
-                    </TabPanel>
-                    <TabPanel value={value} index={1}>
-                        <Typography fontSize={"1.3rem"} color={"#acd7ff"} fontWeight={500}>
-                            Junior Front-End Developer at <span className="text-primaryColor italic">Shopdoora</span>
-                        </Typography>
-                        <Typography color={"#acd7ff"} fontSize={"1rem"} marginTop={1}>
-                            Jan 2023 - Present
-                        </Typography>
-                        <Stack direction={"column"} gap={1} marginTop={2}>
-                            <p className="text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus magnam sapiente ut exercitationem nobis. Repellendus.
-                            </p>
-                            <p className="text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem eligendi, vitae error harum, iusto corporis sint soluta, quod quas laudantium velit odio minus mollitia voluptate rem! Quis necessitatibus dolor vero!
-                            </p>
-                            <p className="text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse illo dolorum inventore?
-                            </p>
-                        </Stack>
                     </TabPanel>
                 </Box>
             </div>
