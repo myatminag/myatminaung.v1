@@ -10,6 +10,7 @@ import ExpSection from "@/components/ExpSection";
 import Footer from "@/components/footer";
 import Contact from "@/components/contact";
 import ProjectSection from "@/components/ProjectSection";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const Home = () => {
 
@@ -23,6 +24,7 @@ const Home = () => {
             <Header aboutRef={aboutRef} expRef={expRef} contactRef={contactRef} projectRef={projectRef} />
             {/* <BottomNav aboutRef={aboutRef} expRef={expRef} contactRef={contactRef} projectRef={projectRef} /> */}
             <main className="px-4 lg:px-0">
+                <ScrollToTop />
                 <HeroSection aboutRef={aboutRef} />
                 <AboutSection aboutRef={aboutRef} />
                 {/* <ExpSection expRef={expRef} /> */}
