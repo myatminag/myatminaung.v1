@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import ResumeIcon from "./icons/ResumeIcon";
 import AnimationLottie from "@/lib/animation";
 import MouseIcon from "./icons/MouseIcon";
-import { handleScroll } from "@/utils/handleScroll";
+import { scrollToSection } from "@/utils/scrollToSection";
 
 const HeroSection = ({ homeRef, aboutRef }) => {
 
@@ -16,7 +16,7 @@ const HeroSection = ({ homeRef, aboutRef }) => {
         <section ref={homeRef} className="lg:pb-0 lg:px-[15%] relative">
             <div className="hidden lg:block lg:absolute lg:bottom-10 lg:left-[50%] lg:translate-x-[-50%]">
                 <motion.div 
-                    onClick={() => handleScroll(aboutRef)}
+                    onClick={() => scrollToSection(aboutRef)}
                     className="lg:flex lg:flex-col lg:items-center lg:gap-y-0 lg:cursor-pointer"
                     transition={{
                         duration: 1.5,

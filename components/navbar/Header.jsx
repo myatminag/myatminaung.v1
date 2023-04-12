@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import DarkIcon from "../icons/DarkIcon";
 import LightIcon from "../icons/LightIcon";
-import { handleScroll } from "@/utils/handleScroll";
+import { scrollToSection } from "@/utils/scrollToSection";
 
 const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
 
@@ -44,7 +44,7 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
                 </p>
                 <div className="hidden lg:flex lg:items-center lg:gap-x-12">
                     {navigation.map(nav => (
-                        <p key={nav.id} onClick={() => handleScroll(nav.ref)} className="text-[#FFFFFF] cursor-pointer">
+                        <p key={nav.id} onClick={() => scrollToSection(nav.ref)} className="text-[#FFFFFF] cursor-pointer">
                             {nav.label}
                         </p>
                     ))}
