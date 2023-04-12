@@ -1,76 +1,131 @@
-import Stack from "@mui/material/Stack";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
+
+import { useState } from 'react';
+import PropTypes from 'prop-types';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
 
 import ExpJson from "@/assets/exp.json"
 import AnimateHeading from "./AnimateHeading";
+function TabPanel(props) {
+    const { children, value, index, ...other } = props;
+  
+    return (
+        <div
+            role="tabpanel"
+            hidden={value !== index}
+            id={`simple-tabpanel-${index}`}
+            aria-labelledby={`simple-tab-${index}`}
+            {...other}
+        >
+            {value === index && (
+                <Box sx={{ px: 0, py: 2 }}>
+                    {children}
+                </Box>
+            )}
+        </div>
+    );
+}
+  
+TabPanel.propTypes = {
+    children: PropTypes.node,
+    index: PropTypes.number.isRequired,
+    value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+    return {
+        id: `simple-tab-${index}`,
+        'aria-controls': `simple-tabpanel-${index}`,
+    };
+}
 
 const ExpSection = ({ expRef }) => {
-    return (
-        <section className="">
 
+    const [value, setValue] = useState(0);
+
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
+
+    return (
+        <section ref={expRef} className="lg:pb-0 lg:px-[15%]">
+            <div className="max-w-[600px] h-screen lg:mx-auto lg:flex lg:justify-center lg:items-center">
+                <Box sx={{ width: "100%" }}>
+                    <header className="mb-4 text-[2rem] font-[600] text-primaryColor">
+                        Experiences
+                    </header>
+                    <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                        <Tabs 
+                            value={value}
+                            onChange={handleChange}
+                            variant="scrollable"
+                            scrollButtons={false}
+                            aria-label="scrollable auto tabs example"
+                            sx={{
+                                "& .MuiButtonBase-root.MuiTab-root": {
+                                    color: "#acd7ff",
+                                    // borderBottom: '1px solid',
+                                    // borderBottomColor: '#acd7ff',
+                                },
+                                "& .MuiButtonBase-root.MuiTab-root.Mui-selected": {
+                                    borderBottom: '1px solid',
+                                    borderBottomColor: '#5de4c7',
+                                    fontWeight: 400,
+                                    color: '#5de4c7',
+                                },
+                                "& .MuiTabs-indicator": {
+                                    display: "none"
+                                },
+                            }}
+                        >
+                            <Tab label="Tee Htwin" {...a11yProps(0)} />
+                            <Tab label="Shopdoora" {...a11yProps(1)} />
+                        </Tabs>
+                    </Box>
+                    <TabPanel value={value} index={0}>
+                        <Typography fontSize={"1.3rem"} color={"#acd7ff"} fontWeight={500}>
+                            Junior Full-Stack Developer at <span className="text-primaryColor italic">Tee Htwin</span>
+                        </Typography>
+                        <Typography color={"#acd7ff"} fontSize={"1rem"} marginTop={1}>
+                            Nov 2022 - Present
+                        </Typography>
+                        <Stack direction={"column"} gap={1} marginTop={2}>
+                            <p className="text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus magnam sapiente ut exercitationem nobis. Repellendus.
+                            </p>
+                            <p className="text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem eligendi, vitae error harum, iusto corporis sint soluta, quod quas laudantium velit odio minus mollitia voluptate rem! Quis necessitatibus dolor vero!
+                            </p>
+                            <p className="text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse illo dolorum inventore?
+                            </p>
+                        </Stack> 
+                    </TabPanel>
+                    <TabPanel value={value} index={1}>
+                        <Typography fontSize={"1.3rem"} color={"#acd7ff"} fontWeight={500}>
+                            Junior Front-End Developer at <span className="text-primaryColor italic">Shopdoora</span>
+                        </Typography>
+                        <Typography color={"#acd7ff"} fontSize={"1rem"} marginTop={1}>
+                            Jan 2023 - Present
+                        </Typography>
+                        <Stack direction={"column"} gap={1} marginTop={2}>
+                            <p className="text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus magnam sapiente ut exercitationem nobis. Repellendus.
+                            </p>
+                            <p className="text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem eligendi, vitae error harum, iusto corporis sint soluta, quod quas laudantium velit odio minus mollitia voluptate rem! Quis necessitatibus dolor vero!
+                            </p>
+                            <p className="text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse illo dolorum inventore?
+                            </p>
+                        </Stack>
+                    </TabPanel>
+                </Box>
+            </div>
         </section>
-        // <Box
-        //     ref={expRef} 
-        //     width={"100vw"} 
-        //     maxWidth={"1240px"} 
-        //     sx={{
-        //         display: { lg: "flex" },
-        //         justifyContent: { lg: "center" },
-        //         alignItems: { lg: "center" },
-        //         marginX: { lg: "auto" },
-        //         paddingY: { xs: "5rem" },
-        //         paddingX: { xs: "16px" }
-        //     }}
-        // >
-        //     <Box>
-        //         <AnimateHeading title={"Experience."} />
-        //         {/* ----- mobile view ----- */}
-        //         <Stack direction={"column"} spacing={2.5} marginTop={4}>
-        //             {ExpJson.map(data => (
-        //                 <Stack key={data.id} bgcolor="#313340" direction={"column"} spacing={2} padding={"32px 16px"} borderRadius={"10px"}>
-        //                     <Stack direction={"column"} spacing={0.5}>
-        //                         <Typography fontSize={"1.2rem"} fontWeight={600} color="#acd7ff">
-        //                             {data.jobTitle}
-        //                         </Typography>
-        //                         <Stack direction={"row"} alignItems={"center"} spacing={0.5}>
-        //                             <Typography fontStyle={"italic"} color="#acd7ff">
-        //                                 {data.companyName}
-        //                             </Typography>
-        //                             <Typography color="#acd7ff">
-        //                                 /
-        //                             </Typography>
-        //                             <Typography color="#acd7ff">
-        //                                 {data.jobType}
-        //                             </Typography>
-        //                         </Stack>
-        //                         <Typography fontWeight={300} color="#acd7ff">
-        //                             {data.date}
-        //                         </Typography>
-        //                         <Typography 
-        //                             fontSize={"0.9rem"} 
-        //                             width={"90px"} 
-        //                             textAlign={"center"}
-        //                             bgcolor={"#5de4c7"} 
-        //                             padding={"5px"} 
-        //                             borderRadius={"5px"}
-        //                         >
-        //                             {data.type}
-        //                         </Typography>
-        //                     </Stack>
-        //                     <Stack direction={"column"} spacing={1}>
-        //                         <Typography fontSize={"1.2rem"} fontWeight={600} color="#acd7ff">
-        //                             {data.companyName}
-        //                         </Typography>
-        //                         <Typography fontWeight={300} color="#acd7ff">
-        //                             {data.description}
-        //                         </Typography>
-        //                     </Stack>
-        //                 </Stack>
-        //             ))}
-        //         </Stack>
-        //     </Box>
-        // </Box>
     );
 }
 

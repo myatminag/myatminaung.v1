@@ -27,7 +27,7 @@ const Home = () => {
                 <ScrollToTop />
                 <HeroSection aboutRef={aboutRef} />
                 <AboutSection aboutRef={aboutRef} />
-                {/* <ExpSection expRef={expRef} /> */}
+                <ExpSection expRef={expRef} />
                 {/* <ProjectSection projectRef={projectRef} /> */}
                 {/* <Contact contactRef={contactRef} /> */}
             </main>

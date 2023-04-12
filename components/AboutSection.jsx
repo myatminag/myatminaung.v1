@@ -7,7 +7,7 @@ import AnimationLottie from "@/lib/animation";
 const AboutSection = ({ aboutRef }) => {
     return (
         <section ref={aboutRef} className="lg:pb-0 lg:px-[15%]">
-            <div className="max-w-[1240px] min-h-[90vh] lg:mx-auto lg:flex lg:justify-center lg:items-center">
+            <div className="max-w-[1240px] h-screen lg:mx-auto lg:flex lg:justify-center lg:items-center">
                 <div className="w-[100%] lg:flex lg:items-center lg:justify-evenly">
                     <div className="block lg:hidden">
                         <AnimationLottie />
