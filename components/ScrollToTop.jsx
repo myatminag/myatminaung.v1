@@ -28,7 +28,7 @@ const ScrollToTop = () => {
     }, []);
 
     return (
-        <div className="fixed bottom-6 right-6 xl:bottom-9 xl:right-9">
+        <div className="fixed bottom-16 right-4 xl:bottom-9 xl:right-9">
             {showButton && (
                 <button onClick={handleScrollToTop} className="p-2 rounded-full bg-[#1c1e28]">
                     <CircleArrowIcon />
