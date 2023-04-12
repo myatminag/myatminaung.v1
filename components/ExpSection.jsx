@@ -50,8 +50,8 @@ const ExpSection = ({ expRef }) => {
     };
 
     return (
-        <section ref={expRef} className="lg:pb-0 lg:px-[15%]">
-            <div className="max-w-[600px] h-screen lg:mx-auto lg:flex lg:justify-center lg:items-center">
+        <section ref={expRef} className="pt-[5rem] pb-[5rem] lg:pt-0 lg:pb-0 lg:px-[15%]">
+            <div className="max-w-[600px] min-h-[100vh] lg:mx-auto lg:flex lg:justify-center lg:items-center">
                 <Box sx={{ width: "100%" }}>
                     <header className="mb-4 text-[2rem] font-[600] text-primaryColor">
                         Experiences
