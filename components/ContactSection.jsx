@@ -1,9 +1,14 @@
+import FacebookIcon from "./icons/FacebookIcon";
+import GithubIcon from "./icons/GithubIcon";
+import InstagramIcon from "./icons/InstagramIcon";
+import LinkedInIcon from "./icons/LinkedInIcon";
+
 const ContactSection = ({ contactRef }) => {
     return (
-        <section ref={contactRef} className="pb-[5rem] lg:pt-0 lg:pb-0 lg:px-[15%]">
-            <div className="relative max-w-[600px] min-h-[100vh] h-full w-full lg:mx-auto lg:flex lg:justify-center lg:items-center">
+        <section ref={contactRef} className="pt-[5rem] lg:pt-0 lg:pb-0 lg:px-[15%]">
+            <div className="relative max-w-[600px] min-h-[80vh] lg:min-h-[100vh] h-full w-full lg:mx-auto lg:flex lg:justify-center lg:items-center">
                 <div>
-                    <p className="text-center text-primaryColor text-[2rem] font-semibold mb-6">
+                    <p className="text-center text-primaryColor text-[1.6rem] font-semibold mb-6">
                         {"Let's work together!"}
                     </p>
                     <p className="text-[#acd7ff] text-center mb-6">
@@ -11,7 +16,7 @@ const ContactSection = ({ contactRef }) => {
                         Fascinated with how intricate programming and problems can be, I am highly adaptable and willing to learn.
                     </p>
                     <div className="flex items-center justify-center">
-                        <a href="mailto:dev.mma2021@gmail.com">
+                        <a href="mailto:myatminaung.dev@gmail.com">
                             <button className="btn">
                                 <p>
                                     Get In Touch
@@ -20,8 +25,14 @@ const ContactSection = ({ contactRef }) => {
                         </a>
                     </div>
                 </div>
-                <div className="absolute bottom-4">
-                    <p className="text-[0.9rem] text-[#acd7ff]">
+                <div className="absolute left-[50%] translate-x-[-50%] bottom-[4rem] lg:bottom-6">
+                    <div className="flex items-center justify-center gap-x-5 mb-3">
+                        <GithubIcon />
+                        <LinkedInIcon />
+                        <FacebookIcon />
+                        <InstagramIcon />
+                    </div>
+                    <p className="text-[0.9rem] text-center text-[#acd7ff]">
                         Designed & Developed by Myat Min Aung
                     </p>
                 </div>
