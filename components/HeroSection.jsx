@@ -14,7 +14,7 @@ const HeroSection = ({ homeRef, aboutRef }) => {
 
     return (
         <section ref={homeRef} className="pt-[2rem] lg:px-[15%] relative">
-            <div className="hidden lg:block lg:absolute lg:bottom-10 lg:left-[50%] lg:translate-x-[-50%]">
+            <div className="hidden lg:block lg:absolute lg:bottom-14 lg:left-[50%] lg:translate-x-[-50%]">
                 <motion.div 
                     onClick={() => scrollToSection(aboutRef)}
                     className="lg:flex lg:flex-col lg:items-center lg:gap-y-0 lg:cursor-pointer"

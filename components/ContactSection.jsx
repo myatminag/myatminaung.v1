@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import FacebookIcon from "./icons/FacebookIcon";
 import GithubIcon from "./icons/GithubIcon";
 import InstagramIcon from "./icons/InstagramIcon";
@@ -27,10 +29,18 @@ const ContactSection = ({ contactRef }) => {
                 </div>
                 <div className="absolute left-[50%] translate-x-[-50%] bottom-[4rem] lg:bottom-6">
                     <div className="flex items-center justify-center gap-x-5 mb-3">
-                        <GithubIcon />
-                        <LinkedInIcon />
-                        <FacebookIcon />
-                        <InstagramIcon />
+                        <Link target='__blank' href="https://github.com/MyatminAung2001">
+                            <GithubIcon />
+                        </Link>
+                        <Link target='__blank' href="https://www.linkedin.com/in/myat-min-aung-830039245">
+                            <LinkedInIcon />
+                        </Link>
+                        <Link target='__blank' href="https://www.facebook.com/profile.php?id=100008542208276">
+                            <FacebookIcon />
+                        </Link>
+                        <Link target='__blank' href="https://www.instagram.com/iri_diam">
+                            <InstagramIcon />
+                        </Link>
                     </div>
                     <p className="text-[0.9rem] text-center text-[#acd7ff]">
                         Designed & Developed by Myat Min Aung
