@@ -7,26 +7,26 @@ const InstagramIcon = () => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
+            width="24"
+            height="24"
             fill="none"
-            viewBox="0 0 51 51"
+            viewBox="0 0 24 24"
+            onMouseOver={() => setIsHover(true)}
+            onMouseOut={() => setIsHover(false)}
         >
             <path
-                fill={isHover ? "#5de4c7" : "#acd7ff"}
+                stroke={isHover ? "#5de4c7" : "#acd7ff"}
                 strokeMiterlimit="10"
-                strokeWidth="2.03"
-                d="M36.69 2H14.793C7.728 2 2 7.728 2 14.793V36.69c0 7.065 5.728 12.793 12.793 12.793H36.69c7.065 0 12.793-5.728 12.793-12.793V14.793C49.483 7.728 43.755 2 36.69 2z"
+                d="M17.073 1H6.927A5.927 5.927 0 001 6.927v10.146A5.927 5.927 0 006.927 23h10.146A5.927 5.927 0 0023 17.073V6.927A5.927 5.927 0 0017.073 1z"
+            ></path>
+            <path
+                stroke={isHover ? "#5de4c7" : "#acd7ff"}
+                strokeMiterlimit="10"
+                d="M12 17.31a5.31 5.31 0 100-10.62 5.31 5.31 0 000 10.62z"
             ></path>
             <path
                 fill={isHover ? "#5de4c7" : "#acd7ff"}
-                strokeMiterlimit="10"
-                strokeWidth="2.03"
-                d="M25.741 37.203c6.33 0 11.462-5.132 11.462-11.462S32.07 14.28 25.74 14.28 14.28 19.412 14.28 25.741c0 6.33 5.132 11.462 11.461 11.462z"
-            ></path>
-            <path
-                fill={isHover ? "#5de4c7" : "#acd7ff"}
-                d="M39.659 14.28a2.456 2.456 0 100-4.912 2.456 2.456 0 000 4.912z"
+                d="M18.448 6.69a1.138 1.138 0 100-2.276 1.138 1.138 0 000 2.276z"
             ></path>
         </svg>
     );

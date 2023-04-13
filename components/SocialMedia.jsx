@@ -8,7 +8,7 @@ import InstagramIcon from './icons/InstagramIcon';
 
 const SocialMedia = () => {
     return (
-        <div className="lg:fixed lg:z-50 lg:bottom-0 lg:left-8">
+        <div className="hidden lg:block lg:fixed lg:z-50 lg:bottom-0 lg:left-8">
             <div className="flex flex-col items-center gap-y-6">
                 <div className="flex flex-col gap-y-6">
                     <Link target='__blank' href="https://github.com/MyatminAung2001">
@@ -24,7 +24,7 @@ const SocialMedia = () => {
                         <InstagramIcon />
                     </Link>
                 </div>
-                <div className="w-[0.5px] h-[70px] bg-[#acd7ff]" />
+                <div className="w-[0.5px] h-[100px] bg-[#acd7ff]" />
             </div>
         </div>
     )
