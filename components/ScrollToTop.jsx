@@ -28,7 +28,7 @@ const ScrollToTop = () => {
     }, []);
 
     return (
-        <div className="lg:fixed lg:bottom-16 lg:right-4 xl:bottom-6 xl:right-6">
+        <div className="lg:fixed lg:bottom-6 lg:right-6">
             {showButton && (
                 <button onClick={handleScrollToTop} className="p-2 rounded-full bg-primaryColor">
                     <TopArrowIcon />

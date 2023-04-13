@@ -8,11 +8,11 @@ const TopArrowIcon = () => {
             viewBox="0 0 52 79"
         >
             <path
-                fill="#000"
+                fill="#1c1e28"
                 d="M25.325 2L2 28.063h17.105l.293 20.62h12.197l-.049-20.62H48.65L25.325 2z"
             ></path>
             <path
-                stroke="#000"
+                stroke="#1c1e28"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="3.591"
