@@ -7,7 +7,6 @@ import BottomNav from "@/components/navbar/BottomNav";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ExpSection from "@/components/ExpSection";
-import Footer from "@/components/footer";
 import Contact from "@/components/contact";
 import ProjectSection from "@/components/ProjectSection";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -28,10 +27,9 @@ const Home = () => {
                 <HeroSection aboutRef={aboutRef} />
                 <AboutSection aboutRef={aboutRef} />
                 <ExpSection expRef={expRef} />
-                {/* <ProjectSection projectRef={projectRef} /> */}
+                <ProjectSection projectRef={projectRef} />
                 {/* <Contact contactRef={contactRef} /> */}
             </main>
-            {/* <Footer /> */}
         </>
     );
 }

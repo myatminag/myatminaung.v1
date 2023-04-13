@@ -1,86 +1,61 @@
 import Link from "next/link";
 import Image from "next/image";
-import Stack from "@mui/material/Stack";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import IconButton from "@mui/material/IconButton";
+import { useState } from "react";
 
-import GithubIcon from "./icons/GithubIcon";
-import UrlIcon from "./icons/UrlIcon";
-import AnimateHeading from "./AnimateHeading";
 import ProjectJson from "@/assets/projects.json";
 
 const ProjectSection = ({ projectRef }) => {
 
+    const [isHover, setIsHover] = useState(null);
+
+    const handleItemHover = (currId) => {
+        setIsHover(currId);
+    };
+
+    const handleItemLeave = () => {
+        setIsHover(null);
+    };
+
     return (
-        <Box
-            ref={projectRef} 
-            width={"100vw"} 
-            maxWidth={"1240px"} 
-            sx={{
-                display: { lg: "flex" },
-                justifyContent: { lg: "center" },
-                alignItems: { lg: "center" },
-                marginX: { lg: "auto" },
-                paddingY: { xs: "5rem" },
-                paddingX: { xs: "16px" }
-            }}
-        >
-            <Box>
-                <AnimateHeading title={"Projects."} />
-                {/* ----- mobile view ----- */}
-                <Stack direction={"column"} spacing={5} marginTop={4}>
-                    {ProjectJson.map(data => (
-                        <Stack key={data.id} direction={"column"} spacing={1}>
-                            <Box position={"relative"} width={"100%"} height={"200px"}>
-                                <Image 
-                                    src={data.url}
-                                    alt={data.title}
-                                    fill
-                                    style={{ objectFit: "cover" }}  
-                                />
-                            </Box>
-                            <Stack direction={"column"} spacing={1}>
-                                <Stack direction={"row"} alignItems={"center"} justifyContent={"space-between"}>
-                                    <Typography fontSize={"1.2rem"} fontWeight={600} color={"#acd7ff"}>
-                                        {data.title}
-                                    </Typography>
-                                    <Stack direction={"row"} alignItems={"center"} spacing={1}>
-                                        <Link href={data.githubLink}>
-                                            <IconButton 
-                                                sx={{ 
-                                                    px: "0",
-                                                    '&:hover': {
-                                                        backgroundColor: "transparent"
-                                                    }
-                                                }}
-                                            >
-                                                <GithubIcon />
-                                            </IconButton>
-                                        </Link>
-                                        <Link href={data.demoLink}>
-                                            <IconButton 
-                                                sx={{ 
-                                                    px: "0",
-                                                    '&:hover': {
-                                                        backgroundColor: "transparent"
-                                                    }
-                                                }}
-                                            >
-                                                <UrlIcon />
-                                            </IconButton>
-                                        </Link>
-                                    </Stack>
-                                </Stack>
-                                <Typography fontWeight={300} color={"#acd7ff"}>
-                                    {data.description}
-                                </Typography>
-                            </Stack>
-                        </Stack>
-                    ))}
-                </Stack>
-            </Box>
-        </Box>
+        <section ref={projectRef} className="lg:pt-0 lg:pb-0 lg:px-[15%]">
+            <div className="max-w-[1240px] min-h-[100vh] lg:mx-auto lg:flex lg:justify-center lg:items-center">
+                <div>
+                    <header className="mb-4 text-[1.6rem] font-[600] text-primaryColor">
+                        {"What I've built..."}
+                    </header>
+                    <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-2 lg:gap-y-6 lg:gap-x-6">
+                        {ProjectJson.map(data => (
+                            <Link key={data.id} href={data.demoLink}>
+                                <div className="relative w-[100%] lg:w-[500px] h-[200px] lg:h-[250px]">
+                                    <Image 
+                                        onMouseOver={() => handleItemHover(data.id)}
+                                        onMouseOut={handleItemLeave}
+                                        src={data.url}
+                                        alt={data.title}
+                                        fill
+                                        className="mb-2 rounded-md"
+                                    />
+                                    {isHover === data.id && (
+                                        <div className="absolute p-4 bottom-0 left-0 right-0 bg-[#546077] bg-opacity-75 rounded-b-md">
+                                            <p className="mb-2 text-white text-[1.1rem]">
+                                                {data.title}
+                                            </p>
+                                            <div className="flex items-center gap-x-1">
+                                                {data.stacks?.map(data => (
+                                                    <p key={data} className="text-white">
+                                                        {data}
+                                                    </p>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </section>
     );
 }
 

@@ -5,7 +5,8 @@
         "title": "Empress Store",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         "demoLink": "https://empress.vercel.app",
-        "githubLink": "https://github.com/MyatminAung2001/Empress-Frontend"
+        "githubLink": "https://github.com/MyatminAung2001/Empress-Frontend",
+        "stacks": ["Reactjs", "TailwindCss", "Nodejs", "Expressjs", "Mongodb"]
     },
     {
         "id": 2,
@@ -13,7 +14,7 @@
         "title": "Journey Blog",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         "demoLink": "https://journey-blog-flax.vercel.app",
-        "githubLink": "https://github.com/MyatminAung2001/The-Journey-Blog/tree/main/client"
+        "stacks": ["Reactjs", "TailwindCss", "Vitejs", "Nodejs", "Expressjs", "Mongodb"]
     },
     {
         "id": 3,
@@ -21,6 +22,6 @@
         "title": "Journey Panel",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         "demoLink": "https://journey-panel.vercel.app",
-        "githubLink": "https://github.com/MyatminAung2001/The-Journey-Blog/tree/main/admin"
+        "stacks": ["Reactjs", "TailwindCss", "Vitejs", "Nodejs", "Expressjs", "Mongodb"]
     }
 ]

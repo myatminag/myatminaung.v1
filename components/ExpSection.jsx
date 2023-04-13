@@ -50,11 +50,11 @@ const ExpSection = ({ expRef }) => {
     };
 
     return (
-        <section ref={expRef} className="pt-[5rem] pb-[5rem] lg:pt-0 lg:pb-0 lg:px-[15%]">
-            <div className="max-w-[600px] min-h-[100vh] lg:mx-auto lg:flex lg:justify-center lg:items-center">
+        <section ref={expRef} className="lg:pt-0 lg:pb-0 lg:px-[15%]">
+            <div className="max-w-[600px] 2xl:max-w-[900px] min-h-[100vh] lg:mx-auto lg:flex lg:justify-center lg:items-center">
                 <Box sx={{ width: "100%" }}>
                     <header className="mb-4 text-[2rem] font-[600] text-primaryColor">
-                        Experiences
+                        {"Where I've worked..."}
                     </header>
                     <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                         <Tabs 
@@ -118,7 +118,7 @@ const ExpSection = ({ expRef }) => {
                                 <li className="text-primaryColor mb-2">
                                     <p className="text-[#acd7ff] font-light xl:text-[1.1rem] 2xl:text-[1.5rem]">
                                         Implemented and shipped the front-end of Aya Zay multi-seller web app for Aya Bank 
-                                        whichs let users can buy various kinds of products at Aya Pay application.
+                                        which let users can buy various kinds of products at Aya Pay application.
                                     </p>
                                 </li>
                             </ul>
@@ -133,10 +133,13 @@ const ExpSection = ({ expRef }) => {
                         </Typography>
                         <Stack direction={"column"} gap={1} marginTop={2}>
                             <p className="text-[#acd7ff] font-light xl:text-[1.1rem] 2xl:text-[1.5rem]">
-                                Implementing
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla laboriosam excepturi hic commodi fugit, voluptas animi provident voluptatem itaque illo.
                             </p>
                             <p className="text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem eligendi, vitae error harum, iusto corporis sint soluta, quod quas laudantium velit odio minus mollitia voluptate rem! Quis necessitatibus dolor vero!
+                            </p>
+                            <p className="text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fugit quibusdam est nisi veritatis?
                             </p>
                             <p className="text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse illo dolorum inventore?
