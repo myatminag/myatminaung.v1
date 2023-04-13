@@ -35,7 +35,7 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
     return (
         <nav className={
                 changeBgColor ? 
-                "fixed top-0 w-full z-50 bg-[rgba(27, 27, 30, 0.25)] backdrop-blur-[10px] shadow-[0 8px 32px 0 rgba( 16, 17, 16, 0.25 )]" : 
+                "fixed top-0 w-full z-50 bg-[#1c1e28] backdrop-blur-[10px] shadow-[0 8px 32px 0 rgba( 16, 17, 16, 0.25 )]" : 
                 "fixed top-0 w-full z-50"
             }>
             <div className="flex items-center justify-between py-3 px-3 lg:py-6 lg:px-[10%]">

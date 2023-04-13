@@ -13,7 +13,7 @@ const HeroSection = ({ homeRef, aboutRef }) => {
     const router = useRouter();
 
     return (
-        <section ref={homeRef} className="lg:px-[15%] relative">
+        <section ref={homeRef} className="pt-[2rem] lg:px-[15%] relative">
             <div className="hidden lg:block lg:absolute lg:bottom-10 lg:left-[50%] lg:translate-x-[-50%]">
                 <motion.div 
                     onClick={() => scrollToSection(aboutRef)}
@@ -33,7 +33,7 @@ const HeroSection = ({ homeRef, aboutRef }) => {
                     </p>
                 </motion.div>
             </div>
-            <div className="max-w-[1240px] min-h-[100vh] w-full h-full lg:mx-auto lg:flex lg:justify-center lg:items-center">
+            <div className="max-w-[1240px] lg:min-h-[100vh] w-full h-full lg:mx-auto lg:flex lg:justify-center lg:items-center">
                 <div className="w-[100%] lg:flex lg:items-center lg:justify-evenly">
                     <div className="block lg:hidden">
                         <AnimationLottie />

@@ -1,13 +1,9 @@
-import Image from "next/image";
-
-import profilePic from "@/assets/myProfile.jpeg"; 
-import AnimateHeading from "./AnimateHeading";
 import AnimationLottie from "@/lib/animation";
 
 const AboutSection = ({ aboutRef }) => {
     return (
-        <section ref={aboutRef} className="lg:pb-0 lg:px-[15%]">
-            <div className="max-w-[1240px] min-h-[100vh] lg:mx-auto lg:flex lg:justify-center lg:items-center">
+        <section ref={aboutRef} className="pt-[2rem] lg:pt-0 lg:px-[15%]">
+            <div className="max-w-[1240px] lg:min-h-[100vh] lg:mx-auto lg:flex lg:justify-center lg:items-center">
                 <div className="w-[100%] lg:flex lg:items-center lg:justify-evenly">
                     <div className="block lg:hidden">
                         <AnimationLottie />
@@ -29,9 +25,11 @@ const AboutSection = ({ aboutRef }) => {
                             Interesting in the entire web standards spectrum, I like to develop on ambititous projects with 
                             positive people over the course of my life and career.
                         </p>
-                        <p className="mb-2 lg:w-[550px] 2xl:w-[650px] text-primaryColor xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                        <a href="mailto:myatminaung.dev@gmail.com" 
+                            className="mb-2 lg:w-[550px] 2xl:w-[650px] text-primaryColor xl:text-[1.1rem] 2xl:text-[1.5rem]"
+                        >
                             {"Let's"} build something special...
-                        </p>
+                        </a>
                     </div>
                     <div className="w-[380px] hidden lg:block">
                         <AnimationLottie />
