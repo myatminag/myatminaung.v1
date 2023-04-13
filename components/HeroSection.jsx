@@ -69,7 +69,6 @@ const HeroSection = ({ homeRef, aboutRef }) => {
                             onClick={() => router.push("/resume.pdf")}
                             className="btn"
                         >
-                            {/* <ResumeIcon /> */}
                             <p>
                                 My Resume
                             </p>
