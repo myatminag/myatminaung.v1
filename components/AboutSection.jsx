@@ -13,7 +13,7 @@ const AboutSection = ({ aboutRef }) => {
                         <AnimationLottie />
                     </div>
                     <div>
-                        <header className="mb-4 text-[2rem] font-[600] text-primaryColor">
+                        <header className="mb-4 text-primaryColor font-semibold text-[1.6rem]">
                             About Me?
                         </header>
                         <p className="mb-3 lg:w-[550px] 2xl:w-[650px] text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">

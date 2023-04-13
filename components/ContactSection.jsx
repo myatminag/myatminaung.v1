@@ -1,6 +1,6 @@
 const ContactSection = ({ contactRef }) => {
     return (
-        <section ref={contactRef} className="lg:pt-0 lg:pb-0 lg:px-[15%]">
+        <section ref={contactRef} className="pb-[5rem] lg:pt-0 lg:pb-0 lg:px-[15%]">
             <div className="relative max-w-[600px] min-h-[100vh] h-full w-full lg:mx-auto lg:flex lg:justify-center lg:items-center">
                 <div>
                     <p className="text-center text-primaryColor text-[2rem] font-semibold mb-6">
