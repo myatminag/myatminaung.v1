@@ -3,7 +3,6 @@
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 
-import ResumeIcon from "./icons/ResumeIcon";
 import AnimationLottie from "@/lib/animation";
 import MouseIcon from "./icons/MouseIcon";
 import { scrollToSection } from "@/utils/scrollToSection";
@@ -46,7 +45,7 @@ const HeroSection = ({ homeRef, aboutRef }) => {
                             Myat Min Aung
                         </p>
                         <p className="mb-3 font-semibold text-primaryColor text-[1.6rem] xl:text-[2.4rem] 2xl:text-[3.2rem]">
-                            A Full-stack Web Developer
+                            A Full-stack Developer
                         </p>     
                         <p className="mb-3 lg:w-[550px] 2xl:w-[650px] text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
                             I build awesome things for the web specializing in <span className="text-primaryColor">Reactjs</span> & {" "}

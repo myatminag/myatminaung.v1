@@ -11,6 +11,7 @@ import ContactSection from "@/components/ContactSection";
 import ProjectSection from "@/components/ProjectSection";
 import ScrollToTop from "@/components/ScrollToTop";
 import SocialMedia from "@/components/SocialMedia";
+import Loader from "@/components/Loader";
 
 const Home = () => {
 
@@ -21,6 +22,7 @@ const Home = () => {
 
     return (
         <>
+            <Loader>Develop & Innovate</Loader>
             <Header aboutRef={aboutRef} expRef={expRef} contactRef={contactRef} projectRef={projectRef} />
             <BottomNav aboutRef={aboutRef} expRef={expRef} contactRef={contactRef} projectRef={projectRef} />
             <SocialMedia />
