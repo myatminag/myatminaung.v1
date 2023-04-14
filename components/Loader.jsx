@@ -9,7 +9,7 @@ const Loader = ({ children }) => {
         const q = gsap.utils.selector(loadingRef);
 
         const tl = gsap.timeline({ defaults: { duration: 0.7 } });
-        tl.fromTo((".loading-text"), { y: 120 }, { y: -10 });
+        tl.fromTo((".loading-text"), { y: 150 }, { y: 0 });
         tl.to((".white-bg"), { x: "-100%" })
         .to((".dark-bg"),{ x: "-100%", duration: 0.6 }, "-=0.6");
     }, []);
