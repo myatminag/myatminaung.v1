@@ -27,7 +27,7 @@ const ContactSection = ({ contactRef }) => {
                         </a>
                     </div>
                 </div>
-                <div className="absolute left-[50%] translate-x-[-50%] bottom-[4rem] lg:bottom-6">
+                <div className="absolute left-[50%] translate-x-[-50%] bottom-6">
                     <div className="flex items-center justify-center gap-x-5 mb-3">
                         <Link target='__blank' href="https://github.com/MyatminAung2001">
                             <GithubIcon />
