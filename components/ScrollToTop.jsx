@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 
 import TopArrowIcon from "./icons/TopArrowIcon";
+import CircleArrowIcon from "./icons/CircleArrowIcon";
 
 const ScrollToTop = () => {
 
@@ -28,10 +29,12 @@ const ScrollToTop = () => {
     }, []);
 
     return (
-        <div className="hidden lg:block lg:fixed lg:bottom-6 lg:right-6">
+        <div className="hidden lg:block lg:fixed lg:-bottom-[50px] lg:-right-[50px]">
             {showButton && (
-                <button onClick={handleScrollToTop} className="p-2 rounded-full bg-primaryColor">
-                    <TopArrowIcon />
+                <button onClick={handleScrollToTop} className="p-2 min-w-[110px] min-h-[110px] rounded-full bg-primaryColor">
+                    <div className="mb-9 ml-[0.5rem]">
+                        <CircleArrowIcon />
+                    </div>
                 </button>
             )}
         </div>
