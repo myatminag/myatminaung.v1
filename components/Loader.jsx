@@ -9,13 +9,13 @@ const Loader = ({ children }) => {
         const q = gsap.utils.selector(loadingRef);
 
         const tl = gsap.timeline({ defaults: { duration: 0.7 } });
-        tl.fromTo(q(".loading-text"), { y: 120 }, { y: -10 });
-        tl.to(q(".white-bg"), { x: "-100%" })
-        .to(q(".dark-bg"),{ x: "-100%", duration: 0.6 }, "-=0.6");
+        tl.fromTo((".loading-text"), { y: 120 }, { y: -10 });
+        tl.to((".white-bg"), { x: "-100%" })
+        .to((".dark-bg"),{ x: "-100%", duration: 0.6 }, "-=0.6");
     }, []);
 
     return (
-        <div ref={loadingRef} aria-hidden="true">
+        <div aria-hidden="true">
             <div className="white-bg fixed top-0 left-0 w-full h-screen bg-[#1c1e28] z-[9999] flex justify-center items-center">
                 <div className="overflow-hidden">
                     <span className="loading-text uppercase text-primaryColor inline-block text-2xl sm:text-4xl tracking-widest">
