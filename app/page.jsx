@@ -24,7 +24,7 @@ const Home = () => {
         <>
             <Loader>Develop & Innovate</Loader>
             <Header aboutRef={aboutRef} expRef={expRef} contactRef={contactRef} projectRef={projectRef} />
-            <BottomNav aboutRef={aboutRef} expRef={expRef} contactRef={contactRef} projectRef={projectRef} />
+            {/* <BottomNav aboutRef={aboutRef} expRef={expRef} contactRef={contactRef} projectRef={projectRef} /> */}
             <SocialMedia />
             <main className="px-4 lg:px-0">
                 <ScrollToTop />
