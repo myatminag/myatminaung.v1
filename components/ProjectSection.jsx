@@ -32,7 +32,7 @@ const ProjectSection = ({ projectRef }) => {
                                                 <p className="mb-6 text-[#acd7ff] font-[500] text-center text-[1.2rem]">
                                                     {data.title}
                                                 </p>
-                                                <p className="mb-6 text-[#acd7ff] text-center tracking-wide">
+                                                <p className="mb-6 text-[#acd7ff] font-light text-center tracking-wide">
                                                     {data.description}
                                                 </p>
                                                 <div className="mb-6 flex flex-wrap items-center justify-center gap-x-3">
@@ -44,13 +44,13 @@ const ProjectSection = ({ projectRef }) => {
                                                 </div>
                                                 <div className="flex items-center justify-evenly">
                                                     <Link href={`${data.demoLink}`} className="flex items-center gap-x-2" target="__blank">
-                                                        <p className="text-[#acd7ff]">
+                                                        <p className="text-[#acd7ff] font-light">
                                                             Launch
                                                         </p>
                                                         <UrlIcon />
                                                     </Link>
                                                     <Link href={`${data.githubLink}`} className="flex items-center gap-x-2" target="__blank">
-                                                        <p className="text-[#acd7ff]">
+                                                        <p className="text-[#acd7ff] font-light">
                                                             Github
                                                         </p>
                                                         <GithubIcon />
@@ -73,7 +73,7 @@ const ProjectSection = ({ projectRef }) => {
                                                     <p className="mb-6 text-[#acd7ff] font-[500] text-center text-[1.2rem]">
                                                         {data.title}
                                                     </p>
-                                                    <p className="mb-6 text-[#acd7ff] text-center tracking-wide">
+                                                    <p className="mb-6 text-[#acd7ff] font-light text-center tracking-wide">
                                                         {data.description}
                                                     </p>
                                                     <div className="mb-6 flex flex-wrap items-center justify-center gap-x-3">
@@ -85,13 +85,13 @@ const ProjectSection = ({ projectRef }) => {
                                                     </div>
                                                     <div className="flex items-center justify-evenly">
                                                         <Link href={`${data.demoLink}`} className="flex items-center gap-x-2" target="__blank">
-                                                            <p className="text-[#acd7ff]">
+                                                            <p className="text-[#acd7ff] font-light">
                                                                 Launch
                                                             </p>
                                                             <UrlIcon />
                                                         </Link>
                                                         <Link href={`${data.githubLink}`} className="flex items-center gap-x-2" target="__blank">
-                                                            <p className="text-[#acd7ff]">
+                                                            <p className="text-[#acd7ff] font-light">
                                                                 Github
                                                             </p>
                                                             <GithubIcon />
@@ -104,7 +104,7 @@ const ProjectSection = ({ projectRef }) => {
                                                 <p className="mb-6 text-[#acd7ff] font-[500] text-center text-[1.2rem]">
                                                     {data.title}
                                                 </p>
-                                                <p className="mb-6 text-[#acd7ff] text-center tracking-wide">
+                                                <p className="mb-6 text-[#acd7ff] font-light text-center tracking-wide">
                                                     {data.description}
                                                 </p>
                                                 <div className="mb-6 flex flex-wrap items-center justify-center gap-x-3">
@@ -116,13 +116,13 @@ const ProjectSection = ({ projectRef }) => {
                                                 </div>
                                                 <div className="flex items-center justify-evenly">
                                                     <Link href={`${data.demoLink}`} className="flex items-center gap-x-2" target="__blank">
-                                                        <p className="text-[#acd7ff]">
+                                                        <p className="text-[#acd7ff] font-light">
                                                             Launch
                                                         </p>
                                                         <UrlIcon />
                                                     </Link>
                                                     <Link href={`${data.githubLink}`} className="flex items-center gap-x-2" target="__blank">
-                                                        <p className="text-[#acd7ff]">
+                                                        <p className="text-[#acd7ff] font-light">
                                                             Github
                                                         </p>
                                                         <GithubIcon />

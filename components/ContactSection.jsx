@@ -13,7 +13,7 @@ const ContactSection = ({ contactRef }) => {
                     <p className="text-center text-primaryColor text-[1.6rem] font-semibold mb-6">
                         {"Let's work together!"}
                     </p>
-                    <p className="text-[#acd7ff] text-center mb-6">
+                    <p className="text-[#acd7ff] font-light text-center mb-6">
                         I am always opening to get new opportunities to challenge and upgrade my skills.
                         Fascinated with how intricate programming and problems can be, I am highly adaptable and willing to learn.
                     </p>
@@ -42,7 +42,7 @@ const ContactSection = ({ contactRef }) => {
                             <InstagramIcon />
                         </Link>
                     </div>
-                    <p className="text-[0.9rem] text-center text-[#acd7ff]">
+                    <p className="w-[100%] text-sm text-center font-light text-[#acd7ff]">
                         Designed & Developed by Myat Min Aung
                     </p>
                 </div>
