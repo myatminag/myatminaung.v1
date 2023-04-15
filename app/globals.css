@@ -35,10 +35,10 @@ body {
     /* ----- button ----- */
     .btn {
         @apply flex items-center justify-center gap-[6px] w-[180px] h-[50px] leading-[40px] text-[14px] text-primaryColor
-        border border-primaryColor tracking-[2px] text-center relative transition-all duration-700
+        border border-primaryColor tracking-[2px] text-center relative transition-all duration-500
         /* after */
         after:absolute after:top-0 after:left-0 after:w-[0%] after:h-[100%] after:bg-primaryColor after:transition-all
-        after:first-letter:duration-700
+        after:duration-500
         /* hover: */
         hover:text-[#1c1e28]
         /* hover: after */
