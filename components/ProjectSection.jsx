@@ -37,7 +37,7 @@ const ProjectSection = ({ projectRef }) => {
                                                 </p>
                                                 <div className="mb-6 flex flex-wrap items-center justify-center gap-x-3">
                                                     {data.stacks?.map(data => (
-                                                        <p key={data} className="text-primaryColor tracking-wide text-xs uppercase">
+                                                        <p key={data} className="text-primaryColor tracking-wide text-sm">
                                                             {data.stackOne}
                                                         </p>
                                                     ))}
@@ -78,7 +78,7 @@ const ProjectSection = ({ projectRef }) => {
                                                     </p>
                                                     <div className="mb-6 flex flex-wrap items-center justify-center gap-x-3">
                                                         {data.stacks?.map(data => (
-                                                            <p key={data} className="text-primaryColor tracking-wide text-xs uppercase">
+                                                            <p key={data} className="text-primaryColor tracking-wide text-sm">
                                                                 {data.stackOne}
                                                             </p>
                                                         ))}
@@ -109,7 +109,7 @@ const ProjectSection = ({ projectRef }) => {
                                                 </p>
                                                 <div className="mb-6 flex flex-wrap items-center justify-center gap-x-3">
                                                     {data.stacks?.map(data => (
-                                                        <p key={data} className="text-primaryColor tracking-wide text-xs uppercase">
+                                                        <p key={data} className="text-primaryColor tracking-wide text-sm">
                                                             {data.stackOne}
                                                         </p>
                                                     ))}
