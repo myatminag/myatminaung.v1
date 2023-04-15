@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 
@@ -55,14 +56,14 @@ const HeroSection = ({ homeRef, aboutRef }) => {
                         </p>             
                         <p className="mb-6 lg:w-[550px] 2xl:w-[650px] text-[#acd7ff] xl:text-[1.1em] 2xl:text-[1.5rem]">
                             Currently, I am focusing on frontend development for building incredible eCommerces at {" "}
-                            <a 
+                            <Link 
                                 target="_blank" 
                                 rel="noreferrer"
                                 href="https://www.shopdoora.com/web-view-buy-app"
                                 style={{ color: "#5de4c7", cursor: "pointer", fontWeight: 400 }}
                             >
                                 Shopdoora
-                            </a>.
+                            </Link>.
                         </p>  
                         <button 
                             onClick={() => router.push("/resume.pdf")}

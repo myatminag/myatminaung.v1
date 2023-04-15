@@ -25,7 +25,7 @@ const ProjectSection = ({ projectRef }) => {
                     </header>
                     <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-2 lg:gap-y-6 lg:gap-x-6">
                         {ProjectJson.map(data => (
-                            <Link key={data.id} href={data.demoLink}>
+                            <Link key={data.id} href={data.demoLink} target="__blank">
                                 <div className="relative w-[100%] lg:w-[500px] h-[200px] lg:h-[250px]">
                                     <Image 
                                         onMouseOver={() => handleItemHover(data.id)}

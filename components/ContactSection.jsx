@@ -18,27 +18,27 @@ const ContactSection = ({ contactRef }) => {
                         Fascinated with how intricate programming and problems can be, I am highly adaptable and willing to learn.
                     </p>
                     <div className="flex items-center justify-center">
-                        <a href="mailto:myatminaung.dev@gmail.com">
+                        <Link href="mailto:myatminaung.dev@gmail.com">
                             <button className="btn">
                                 <p>
                                     Get In Touch
                                 </p>
                             </button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="absolute left-[50%] translate-x-[-50%] bottom-6">
                     <div className="flex items-center justify-center gap-x-5 mb-3">
-                        <Link target='__blank' href="https://github.com/MyatminAung2001">
+                        <Link aria-label="Github" target='__blank' href="https://github.com/MyatminAung2001">
                             <GithubIcon />
                         </Link>
-                        <Link target='__blank' href="https://www.linkedin.com/in/myat-min-aung-830039245">
+                        <Link aria-label="LinkedIn" target='__blank' href="https://www.linkedin.com/in/myat-min-aung-830039245">
                             <LinkedInIcon />
                         </Link>
-                        <Link target='__blank' href="https://www.facebook.com/profile.php?id=100008542208276">
+                        <Link aria-label="Facebook" target='__blank' href="https://www.facebook.com/profile.php?id=100008542208276">
                             <FacebookIcon />
                         </Link>
-                        <Link target='__blank' href="https://www.instagram.com/iri_diam">
+                        <Link aria-label="Instagram" target='__blank' href="https://www.instagram.com/iri_diam">
                             <InstagramIcon />
                         </Link>
                     </div>

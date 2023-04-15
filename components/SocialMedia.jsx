@@ -11,16 +11,16 @@ const SocialMedia = () => {
         <div className="hidden lg:block lg:fixed lg:z-50 lg:bottom-0 lg:left-12">
             <div className="flex flex-col items-center gap-y-6">
                 <div className="flex flex-col gap-y-6">
-                    <Link target='__blank' href="https://github.com/MyatminAung2001">
+                    <Link aria-label="Github" target='__blank' href="https://github.com/MyatminAung2001">
                         <GithubIcon />
                     </Link>
-                    <Link target='__blank' href="https://www.linkedin.com/in/myat-min-aung-830039245">
+                    <Link aria-label="LinkedIn" target='__blank' href="https://www.linkedin.com/in/myat-min-aung-830039245">
                         <LinkedInIcon />
                     </Link>
-                    <Link target='__blank' href="https://www.facebook.com/profile.php?id=100008542208276">
+                    <Link aria-label="Facebook" target='__blank' href="https://www.facebook.com/profile.php?id=100008542208276">
                         <FacebookIcon />
                     </Link>
-                    <Link target='__blank' href="https://www.instagram.com/iri_diam">
+                    <Link aria-label="Instagram" target='__blank' href="https://www.instagram.com/iri_diam">
                         <InstagramIcon />
                     </Link>
                 </div>

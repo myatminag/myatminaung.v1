@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import AnimationLottie from "@/utils/animation";
 
 const AboutSection = ({ aboutRef }) => {
@@ -25,11 +27,11 @@ const AboutSection = ({ aboutRef }) => {
                             Interesting in the entire web standards spectrum, I like to develop on ambititous projects with 
                             positive people over the course of my life and career.
                         </p>
-                        <a href="mailto:myatminaung.dev@gmail.com" 
+                        <Link href="mailto:myatminaung.dev@gmail.com" 
                             className="mb-2 lg:w-[550px] 2xl:w-[650px] text-primaryColor xl:text-[1.1rem] 2xl:text-[1.5rem]"
                         >
                             {"Let's"} build something special...
-                        </a>
+                        </Link>
                     </div>
                     {/* <div className="w-[380px] hidden lg:block">
                         <AnimationLottie />

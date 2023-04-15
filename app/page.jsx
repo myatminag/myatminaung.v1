@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef } from "react";
+import { useRef, Fragment } from "react";
 
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
@@ -20,7 +20,7 @@ const Home = () => {
     const expRef = useRef(null);
 
     return (
-        <>
+        <Fragment>
             <Loader>Develop & Innovate</Loader>
             <Header aboutRef={aboutRef} expRef={expRef} contactRef={contactRef} projectRef={projectRef} />
             <SocialMedia />
@@ -32,7 +32,7 @@ const Home = () => {
                 <ProjectSection projectRef={projectRef} />
                 <ContactSection contactRef={contactRef} />
             </main>
-        </>
+        </Fragment>
     );
 }
 
