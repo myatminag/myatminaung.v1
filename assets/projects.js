@@ -2,9 +2,9 @@ export const Projects = [
     {
         id: 1,
         imageIsLeft: 1,
-        url: "https://res.cloudinary.com/dqscrfky2/image/upload/v1679675331/Screenshot_2023-03-24_at_22.57.28_zyrkjr.png",
+        imgUrl: "https://res.cloudinary.com/dqscrfky2/image/upload/v1681562399/Mockup_2_rubh08.png",
         title: "Empress Store",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "A fully functional ecommerce built with mern stack that users can browse variety of products and also allows for secure online transaction using the integrated stripe gateway.",
         demoLink: "https://empress.vercel.app",
         githubLink: "https://github.com/MyatminAung2001/Empress-Frontend",
         stacks: [
@@ -18,9 +18,9 @@ export const Projects = [
     {
         id: 2,
         imageIsLeft: 0,
-        url: "https://res.cloudinary.com/dqscrfky2/image/upload/v1679675337/Screenshot_2023-03-24_at_22.58.11_msgu7o.png",
+        imgUrl: "https://res.cloudinary.com/dqscrfky2/image/upload/v1681562410/Phone_Mac_Mockup_eungyh.png",
         title: "Journey Blog",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        description: "This blog website is inspired by The collector website. It is supported dark & light mode and users can exlpore different kinds of articles on history, art and philosophy.",
         demoLink: "https://journey-blog-flax.vercel.app",
         stacks: [
             { id: 1, stackOne: "Reactjs" },
@@ -34,9 +34,9 @@ export const Projects = [
     {
         id: 3,
         imageIsLeft: 1,
-        imgUrl: "https://res.cloudinary.com/dqscrfky2/image/upload/v1679673924/Project_Three_vypjca.png",
-        title: "Journey Panel",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        imgUrl: "https://res.cloudinary.com/dqscrfky2/image/upload/v1681562420/Mockup_3_vwmvwu.png",
+        title: "Authors Panel",
+        description: "This is the author panel for journey blog where authors can publish or update their post. It can also approve membership for joining community.",
         demoLink: "https://journey-panel.vercel.app",
         stacks: [
             { id: 1, stackOne: "Reactjs" },
