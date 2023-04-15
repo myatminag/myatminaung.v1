@@ -109,7 +109,7 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
                                     href="mailto:myatminaung.dev@gmail.com" 
                                     className="text-[#acd7ff] tracking-wider"
                                 >
-                                    myatminaung@gmail.com
+                                    myatminaung.dev@gmail.com
                                 </Link>
                             </div>
                         </div>
