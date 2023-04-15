@@ -35,9 +35,9 @@ const HeroSection = ({ homeRef, aboutRef }) => {
             </div>
             <div className="max-w-[1240px] lg:min-h-[100vh] w-full h-full lg:mx-auto lg:flex lg:justify-center lg:items-center">
                 <div className="w-[100%] lg:flex lg:items-center lg:justify-evenly">
-                    {/* <div className="block lg:hidden">
+                    <div className="block lg:hidden">
                         <AnimationLottie />
-                    </div> */}
+                    </div>
                     <div>
                         <p className="mb-3 text-[#acd7ff]"> 
                             Welcome, my name is
@@ -48,13 +48,13 @@ const HeroSection = ({ homeRef, aboutRef }) => {
                         <p className="mb-3 font-semibold text-primaryColor text-[1.6rem] xl:text-[2.4rem] 2xl:text-[3.2rem]">
                             A Full-stack Developer
                         </p>     
-                        <p className="mb-3 lg:w-[550px] 2xl:w-[650px] text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
+                        <p className="mb-3 lg:w-[550px] 2xl:w-[650px] text-[#acd7ff]">
                             I build awesome things for the web specializing in <span className="text-primaryColor">Reactjs</span> & {" "}
                             <span className="text-primaryColor">Nextjs </span>
                             for the frontend and <span className="text-primaryColor">Nodejs</span> & {" "}
                             <span className="text-primaryColor">Expressjs</span> for the backend.
                         </p>             
-                        <p className="mb-6 lg:w-[550px] 2xl:w-[650px] text-[#acd7ff] xl:text-[1.1em] 2xl:text-[1.5rem]">
+                        <p className="mb-6 lg:w-[550px] 2xl:w-[650px] text-[#acd7ff]">
                             Currently, I am focusing on frontend development for building incredible eCommerces at {" "}
                             <Link 
                                 target="_blank" 
