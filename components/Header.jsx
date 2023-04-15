@@ -80,6 +80,7 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
                         toggle={setIsOpen} 
                         size={28}
                         color="#ffffff"
+                        label="menu"
                     />
                 </div>
                 {isOpen && (
