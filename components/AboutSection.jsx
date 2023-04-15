@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const AboutSection = ({ aboutRef }) => {
     return (
-        <section ref={aboutRef} className="pt-[2rem] lg:pt-0 lg:px-[15%]">
+        <section ref={aboutRef} className="pt-[4rem] lg:pt-0 lg:px-[15%]">
             <div className="max-w-[1240px] lg:min-h-[100vh] lg:mx-auto lg:flex lg:justify-center lg:items-center">
                 <div className="w-[100%] lg:flex lg:items-center lg:justify-evenly">
                     {/* <div className="block lg:hidden">
