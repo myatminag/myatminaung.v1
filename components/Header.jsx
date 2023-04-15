@@ -1,7 +1,12 @@
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Squeeze as Hamburger } from "hamburger-react";
 import { motion } from "framer-motion";
 
+import GithubIcon from './icons/GithubIcon';
+import LinkedInIcon from './icons/LinkedInIcon';
+import FacebookIcon from './icons/FacebookIcon';
+import InstagramIcon from './icons/InstagramIcon';
 import { scrollToSection } from "@/utils/scrollToSection";
 
 const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
@@ -14,17 +19,6 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
         { id: 3, label: "Project", ref: projectRef },
         { id: 4, label: "Contact", ref: contactRef },
     ];
-
-    // scroll and change nav bgColor
-    const [changeBgColor, setChangeBgColor] = useState(false);
-
-    const handleScrollBgColor = () => {
-        if (window.scrollY >= 50) {
-            setChangeBgColor(true);
-        } else {
-            setChangeBgColor(false);
-        }
-    };
 
     // Mobile menu animation
     const menu = {
@@ -40,14 +34,6 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
     };
 
     useEffect(() => {
-        window.addEventListener("scroll", handleScrollBgColor);
-
-        return () => {
-            window.removeEventListener("scroll", handleScrollBgColor);
-        }
-    }, []);
-
-    useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden'
         } else {
@@ -56,14 +42,10 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
     }, [isOpen]);
 
     return (
-        <nav className={
-                changeBgColor ? 
-                "fixed top-0 w-full z-50 bg-[#1c1e28] backdrop-blur-[10px] shadow-[0 8px 32px 0 rgba( 16, 17, 16, 0.25 )]" : 
-                "fixed top-0 w-full z-50"
-            }>
+        <nav className="fixed top-0 w-full z-50 bg-[#1c1e28]">
             <div className="flex items-center justify-between py-3 px-3 lg:py-6 lg:px-[10%]">
                 <div className="sticky z-[150] top-0 right-0">
-                    <p className="text-[#FFFFFF] text-[1.4rem] font-[400] tracking-wider">
+                    <p className="text-[#acd7ff] text-[1.4rem] font-[400] tracking-wider">
                         Mma.dev
                     </p>
                 </div>
@@ -79,24 +61,24 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
                         toggled={isOpen} 
                         toggle={setIsOpen} 
                         size={28}
-                        color="#ffffff"
+                        color="#acd7ff"
                         label="menu"
                     />
                 </div>
                 {isOpen && (
                     <motion.div 
                         variants={menu}
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "100vh", opacity: 1 }}
-                        transition={{ duration: 0.5 }}
+                        initial={{ x: 100, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
                         exit="exit"
+                        transition={{ duration: 0.4 }}
                         className="fixed z-[100] bottom-0 top-0 right-0 left-0 w-full h-[100vh] overflow-hidden bg-[#1c1e28]"
                     >
-                        <div className="min-h-screen w-screen flex flex-col items-center justify-center">                    
-                            <div className="flex flex-col items-center justify-center gap-y-4">
+                        <div className="min-h-screen w-screen relative flex flex-col items-center justify-center">                    
+                            <div className="flex flex-col items-center justify-center gap-y-12">
                                 {navigation.map((nav) => (
                                     <p  
-                                        className="text-[#acd7ff] text-[1.5rem] font-[400] tracking-wider"
+                                        className="header-nav"
                                         key={nav.id} 
                                         onClick={() => {
                                             setIsOpen(!isOpen)
@@ -107,9 +89,29 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
                                     </p>
                                 ))}
                             </div>
-                            <p className="mt-16 text-[#acd7ff] text-[1.3rem] tracking-wider">
-                                myatminaung@gmail.com
-                            </p>
+                            <div className="absolute bottom-8">
+                                <div className="mb-4 flex items-center justify-center gap-x-6">
+                                    <Link aria-label="Github" target='__blank' href="https://github.com/MyatminAung2001">
+                                        <GithubIcon />
+                                    </Link>
+                                    <Link aria-label="LinkedIn" target='__blank' href="https://www.linkedin.com/in/myat-min-aung-830039245">
+                                        <LinkedInIcon />
+                                    </Link>
+                                    <Link aria-label="Facebook" target='__blank' href="https://www.facebook.com/profile.php?id=100008542208276">
+                                        <FacebookIcon />
+                                    </Link>
+                                    <Link aria-label="Instagram" target='__blank' href="https://www.instagram.com/iri_diam">
+                                        <InstagramIcon />
+                                    </Link>
+                                </div>
+                                <Link 
+                                    target="__blank"
+                                    href="mailto:myatminaung.dev@gmail.com" 
+                                    className="text-[#acd7ff] tracking-wider"
+                                >
+                                    myatminaung@gmail.com
+                                </Link>
+                            </div>
                         </div>
                     </motion.div>
                 )}

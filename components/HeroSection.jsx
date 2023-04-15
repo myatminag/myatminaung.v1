@@ -12,7 +12,7 @@ const HeroSection = ({ homeRef, aboutRef }) => {
     const router = useRouter();
 
     return (
-        <section ref={homeRef} className="pt-[2rem] lg:px-[15%] relative">
+        <section ref={homeRef} className="pt-[5rem] lg:px-[15%] relative">
             <div className="hidden lg:block lg:absolute lg:bottom-14 lg:left-[50%] lg:translate-x-[-50%]">
                 <motion.div 
                     onClick={() => scrollToSection(aboutRef)}
