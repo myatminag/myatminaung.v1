@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 
-import AnimationLottie from "@/lib/animation";
+import AnimationLottie from "@/utils/animation";
 import MouseIcon from "./icons/MouseIcon";
 import { scrollToSection } from "@/utils/scrollToSection";
 
@@ -34,9 +34,9 @@ const HeroSection = ({ homeRef, aboutRef }) => {
             </div>
             <div className="max-w-[1240px] lg:min-h-[100vh] w-full h-full lg:mx-auto lg:flex lg:justify-center lg:items-center">
                 <div className="w-[100%] lg:flex lg:items-center lg:justify-evenly">
-                    <div className="block lg:hidden">
+                    {/* <div className="block lg:hidden">
                         <AnimationLottie />
-                    </div>
+                    </div> */}
                     <div>
                         <p className="mb-3 text-[#acd7ff]"> 
                             Welcome, my name is
@@ -73,9 +73,9 @@ const HeroSection = ({ homeRef, aboutRef }) => {
                             </p>
                         </button>
                     </div>
-                    <div className="w-[380px] hidden lg:block">
+                    {/* <div className="w-[380px] hidden lg:block">
                         <AnimationLottie />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
