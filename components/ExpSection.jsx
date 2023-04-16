@@ -3,11 +3,9 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 
-import ExpJson from "@/assets/exp.json"
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
   
@@ -79,16 +77,15 @@ const ExpSection = ({ expRef }) => {
                             }}
                         >
                             <Tab label="Shopdoora" {...a11yProps(0)} />
-                            <Tab label="Tee Htwin" {...a11yProps(1)} />
                         </Tabs>
                     </Box>
                     <TabPanel value={value} index={0}>
-                        <Typography fontSize={"1.2rem"} color={"#acd7ff"} fontWeight={500}>
+                        <p className="text-[1.2rem] text-[#acd7ff] font-[500]">
                             Junior Front-End Developer
-                        </Typography>
-                        <Typography color={"#acd7ff"} fontSize={"1rem"} marginTop={1}>
-                            <span className="text-primaryColor italic">Shopdoora</span> | January 2023 - Present
-                        </Typography>
+                        </p>
+                        <p className="text-[#acd7ff] mt-[6px]">
+                            January 2023 - Present | <span className="text-primaryColor italic">Shopdoora</span>
+                        </p>
                         <Stack direction={"column"} gap={1} marginTop={2}>
                             <ul className="list-outside list-disc px-3 xl:px-0">
                                 <li className="text-primaryColor mb-2">
@@ -99,8 +96,8 @@ const ExpSection = ({ expRef }) => {
                                 </li>
                                 <li className="text-primaryColor mb-2">
                                     <p className="text-[#acd7ff] font-light xl:text-[1.1rem] 2xl:text-[1.5rem]">
-                                        Developed and maintained micro-frontends using React, Next and others state managment 
-                                        like Redux, Zustand.
+                                        Developed and maintained micro-frontends using React, Next and state managment libraries
+                                        like Redux and Zustand.
                                     </p>
                                 </li>
                                 <li className="text-primaryColor mb-2">
@@ -123,28 +120,6 @@ const ExpSection = ({ expRef }) => {
                                 </li>
                             </ul>
                         </Stack>
-                    </TabPanel>
-                    <TabPanel value={value} index={1}>
-                        <Typography fontSize={"1.2rem"} color={"#acd7ff"} fontWeight={500}>
-                            Junior Full-Stack Developer at <span className="text-primaryColor italic">Tee Htwin</span>
-                        </Typography>
-                        <Typography color={"#acd7ff"} fontSize={"1rem"} marginTop={1}>
-                            November 2022 - Present
-                        </Typography>
-                        <Stack direction={"column"} gap={1} marginTop={2}>
-                            <p className="text-[#acd7ff] font-light xl:text-[1.1rem] 2xl:text-[1.5rem]">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla laboriosam excepturi hic commodi fugit, voluptas animi provident voluptatem itaque illo.
-                            </p>
-                            <p className="text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem eligendi, vitae error harum, iusto corporis sint soluta, quod quas laudantium velit odio minus mollitia voluptate rem! Quis necessitatibus dolor vero!
-                            </p>
-                            <p className="text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fugit quibusdam est nisi veritatis?
-                            </p>
-                            <p className="text-[#acd7ff] xl:text-[1.1rem] 2xl:text-[1.5rem]">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse illo dolorum inventore?
-                            </p>
-                        </Stack> 
                     </TabPanel>
                 </Box>
             </div>
