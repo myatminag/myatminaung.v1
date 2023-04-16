@@ -64,14 +64,15 @@ const HeroSection = ({ homeRef, aboutRef }) => {
                                 Shopdoora
                             </Link>.
                         </p>  
-                        <button 
-                            onClick={() => router.push("/resume.pdf")}
+                        <Link 
+                            target="__blank"
+                            href="/resume.pdf"
                             className="btn"
                         >
                             <p>
                                 My Resume
                             </p>
-                        </button>
+                        </Link>
                     </div>
                     {/* <div className="w-[380px] hidden lg:block">
                         
