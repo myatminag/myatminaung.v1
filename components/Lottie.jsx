@@ -17,7 +17,7 @@ const Lottie = () => {
                 renderer: 'svg',
                 loop: true,
                 autoplay: true,
-                path: "/animation.json",
+                path: "/hero.json",
             });
 
             return () => animation.destroy();
