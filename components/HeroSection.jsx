@@ -47,13 +47,13 @@ const HeroSection = ({ homeRef, aboutRef }) => {
                         <p className="mb-3 font-semibold text-primaryColor text-[1.6rem] xl:text-[2.4rem] 2xl:text-[3.2rem]">
                             A Full-stack Developer
                         </p>     
-                        <p className="mb-3 lg:w-[550px] 2xl:w-[650px] text-[#acd7ff] font-light">
+                        <p className="mb-3 lg:w-[550px] 2xl:w-[650px] text-base text-[#acd7ff] font-light">
                             I build awesome things for the web specializing in <span className="text-primaryColor">Reactjs</span> & {" "}
                             <span className="text-primaryColor">Nextjs </span>
                             for the frontend and <span className="text-primaryColor">Nodejs</span> & {" "}
                             <span className="text-primaryColor">Expressjs</span> for the backend.
                         </p>             
-                        <p className="mb-6 lg:w-[550px] 2xl:w-[650px] text-[#acd7ff] font-light">
+                        <p className="mb-6 lg:w-[550px] 2xl:w-[650px] text-base text-[#acd7ff] font-light">
                             Currently, I am focusing on frontend development for building incredible eCommerces at {" "}
                             <Link 
                                 target="_blank" 
