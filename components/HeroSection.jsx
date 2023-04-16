@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 import MouseIcon from "./icons/MouseIcon";
 import { scrollToSection } from "@/utils/scrollToSection";
+import Lottie from "./Lottie";
 
 const HeroSection = ({ homeRef, aboutRef }) => {
 
@@ -34,9 +35,9 @@ const HeroSection = ({ homeRef, aboutRef }) => {
             </div>
             <div className="max-w-[1240px] lg:min-h-[100vh] w-full h-full lg:mx-auto lg:flex lg:justify-center lg:items-center">
                 <div className="w-[100%] lg:flex lg:items-center lg:justify-evenly">
-                    {/* <div className="block lg:hidden">
-                        
-                    </div> */}
+                    <div className="block lg:hidden">
+                        <Lottie />
+                    </div>
                     <div>
                         <p className="mb-3 text-[#acd7ff] font-light"> 
                             Welcome, my name is
@@ -74,9 +75,9 @@ const HeroSection = ({ homeRef, aboutRef }) => {
                             </p>
                         </Link>
                     </div>
-                    {/* <div className="w-[380px] hidden lg:block">
-                        
-                    </div> */}
+                    <div className="w-[380px] hidden lg:block">
+                        <Lottie />
+                    </div>
                 </div>
             </div>
         </section>

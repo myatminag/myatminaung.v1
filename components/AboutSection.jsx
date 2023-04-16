@@ -1,13 +1,14 @@
 import Link from "next/link";
+import Lottie from "./Lottie";
 
 const AboutSection = ({ aboutRef }) => {
     return (
         <section ref={aboutRef} className="pt-[4rem] lg:pt-0 lg:px-[15%]">
             <div className="max-w-[1240px] lg:min-h-[100vh] lg:mx-auto lg:flex lg:justify-center lg:items-center">
                 <div className="w-[100%] lg:flex lg:items-center lg:justify-evenly">
-                    {/* <div className="block lg:hidden">
-                        
-                    </div> */}
+                    <div className="block lg:hidden">
+                        <Lottie />
+                    </div>
                     <div>
                         <header className="mb-4 text-primaryColor font-semibold text-[1.6rem]">
                             About Me?
@@ -31,9 +32,9 @@ const AboutSection = ({ aboutRef }) => {
                             {"Let's"} build something special...
                         </Link>
                     </div>
-                    {/* <div className="w-[380px] hidden lg:block">
-                        
-                    </div> */}
+                    <div className="w-[380px] hidden lg:block">
+                        <Lottie />
+                    </div>
                 </div>
             </div>
         </section>
