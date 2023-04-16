@@ -1,12 +1,13 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 
 import MouseIcon from "./icons/MouseIcon";
 import { scrollToSection } from "@/utils/scrollToSection";
-import Lottie from "./Lottie";
+
 
 const HeroSection = ({ homeRef, aboutRef }) => {
 
@@ -33,10 +34,16 @@ const HeroSection = ({ homeRef, aboutRef }) => {
                     </p>
                 </motion.div>
             </div>
-            <div className="max-w-[1240px] lg:min-h-[100vh] w-full h-full lg:mx-auto lg:flex lg:justify-center lg:items-center">
+            <div className="max-w-[1240px] lg:min-h-[90vh] w-full h-full lg:mx-auto lg:flex lg:justify-center lg:items-center">
                 <div className="w-[100%] lg:flex lg:items-center lg:justify-evenly">
                     <div className="block lg:hidden">
-                        <Lottie />
+                        <Image 
+                            src="/heroSectionImg.png"
+                            alt="hero-section-img"
+                            width={500}
+                            height={500}
+                            className="scale-75"
+                        />
                     </div>
                     <div>
                         <p className="mb-3 text-[#acd7ff] font-light"> 
@@ -76,7 +83,12 @@ const HeroSection = ({ homeRef, aboutRef }) => {
                         </Link>
                     </div>
                     <div className="w-[380px] hidden lg:block">
-                        <Lottie />
+                        <Image 
+                            src="/heroSectionImg.png"
+                            alt="hero-section-img"
+                            width={500}
+                            height={500}
+                        />
                     </div>
                 </div>
             </div>
