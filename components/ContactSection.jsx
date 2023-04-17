@@ -9,7 +9,11 @@ const ContactSection = ({ contactRef }) => {
     return (
         <section ref={contactRef} className="pt-[5rem] lg:pt-0 lg:pb-0 lg:px-[15%]">
             <div className="relative max-w-[600px] min-h-[80vh] lg:min-h-[100vh] h-full w-full lg:mx-auto lg:flex lg:justify-center lg:items-center">
-                <div>
+                <div
+                    data-aos="fade-up" 
+                    data-aos-delay="0"
+                    data-aos-duration="1000"
+                >
                     <p className="text-center text-primaryColor text-[1.6rem] font-semibold mb-6">
                         {"Let's work together!"}
                     </p>

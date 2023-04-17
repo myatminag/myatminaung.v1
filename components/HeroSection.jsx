@@ -36,7 +36,12 @@ const HeroSection = ({ homeRef, aboutRef }) => {
             </div>
             <div className="max-w-[1240px] lg:min-h-[90vh] w-full h-full lg:mx-auto lg:flex lg:justify-center lg:items-center">
                 <div className="w-[100%] lg:flex lg:items-center lg:justify-evenly">
-                    <div className="block lg:hidden">
+                    <div 
+                        className="block lg:hidden"
+                        data-aos="fade-up" 
+                        data-aos-delay="900"
+                        data-aos-duration="1000"
+                    >
                         <Image 
                             src="/heroSectionImg.png"
                             alt="hero-section-img"
@@ -45,7 +50,11 @@ const HeroSection = ({ homeRef, aboutRef }) => {
                             className="scale-75"
                         />
                     </div>
-                    <div>
+                    <div
+                        data-aos="fade-up" 
+                        data-aos-delay="900"
+                        data-aos-duration="1100"
+                    >
                         <p className="mb-3 text-[#acd7ff] font-light"> 
                             Welcome, my name is
                         </p>

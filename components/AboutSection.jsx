@@ -8,7 +8,11 @@ const AboutSection = ({ aboutRef }) => {
                     {/* <div className="block lg:hidden">
                         
                     </div> */}
-                    <div>
+                    <div
+                        data-aos="fade-up" 
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                    >
                         <header className="mb-4 text-primaryColor font-semibold text-[1.6rem]">
                             About Me?
                         </header>

@@ -43,7 +43,12 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
 
     return (
         <nav className="fixed top-0 w-full z-50 bg-[#1c1e28]">
-            <div className="flex items-center justify-between py-3 px-3 lg:py-6 lg:px-[10%]">
+            <div 
+                className="flex items-center justify-between py-3 px-3 lg:py-6 lg:px-[10%]" 
+                data-aos="fade-in" 
+                data-aos-delay="900"
+                data-aos-duration="1000"
+            >
                 <div className="sticky z-[150] top-0 right-0">
                     <p className="text-[#acd7ff] text-[1.4rem] font-[400] tracking-wider">
                         Mma.dev

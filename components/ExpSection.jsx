@@ -50,7 +50,12 @@ const ExpSection = ({ expRef }) => {
     return (
         <section ref={expRef} className="pt-[4rem] lg:pt-0 lg:px-[15%]">
             <div className="max-w-[600px] 2xl:max-w-[900px] lg:min-h-[100vh] lg:mx-auto lg:flex lg:justify-center lg:items-center">
-                <Box sx={{ width: "100%" }}>
+                <Box 
+                    sx={{ width: "100%" }}
+                    data-aos="fade-up" 
+                    data-aos-delay="0"
+                    data-aos-duration="1000"
+                >
                     <header className="mb-4 text-[1.6rem] font-[600] text-primaryColor">
                         {"Where I've worked..."}
                     </header>
