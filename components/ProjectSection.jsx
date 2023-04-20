@@ -37,7 +37,11 @@ const ProjectSection = ({ projectRef }) => {
     return (
         <section ref={projectRef} className="pt-[4rem] xl:pt-[5rem] lg:px-[15%]">
             <div className="max-w-[1240px] min-h-[100vh] lg:mx-auto lg:flex lg:justify-center lg:items-center">
-                <div>
+                <div
+                    data-aos="fade-up" 
+                    data-aos-delay="0"
+                    data-aos-duration="1000"
+                >
                     <header className="mb-4 text-[1.6rem] font-[600] text-primaryColor">
                         {"What I've built..."}
                     </header>
@@ -45,10 +49,10 @@ const ProjectSection = ({ projectRef }) => {
                         {Projects.map(data => (
                             <Fragment key={data.id}>
                                 <div 
-                                    className="lg:flex lg:items-center lg:justify-between"
                                     data-aos="fade-up" 
                                     data-aos-delay="0"
                                     data-aos-duration="1000"
+                                    className="lg:flex lg:items-center lg:justify-between"
                                 >
                                     {data.imageIsLeft === 1 ? (
                                         <Fragment>
