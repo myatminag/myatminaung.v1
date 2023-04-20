@@ -22,6 +22,29 @@ body {
 }
 
 @layer components {
+    /* ----- section ----- */
+    .section-padding {
+        @apply pt-[4rem] lg:pt-0 lg:px-[15%]
+    }
+
+    /* ----- container ----- */
+    .container {
+        @apply max-w-[1240px] lg:min-h-[100vh] w-full h-full lg:mx-auto lg:flex lg:justify-center lg:items-center
+    }
+
+    /* ----- text ----- */
+    .default-text {
+        @apply text-base text-primaryTextColor font-light
+    }
+
+    .primary-text {
+        @apply text-primaryColor font-semibold text-[1.6rem] xl:text-[2.4rem] 2xl:text-[3.2rem]
+    }
+
+    .secondary-text {
+        @apply text-primaryTextColor font-semibold text-[1.6rem] xl:text-[2.4rem] 2xl:text-[3.2rem]
+    }
+
     /* ----- navbar ----- */
     .header-nav {
         @apply cursor-pointer relative text-[#acd7ff] tracking-wider hover:text-primaryColor 

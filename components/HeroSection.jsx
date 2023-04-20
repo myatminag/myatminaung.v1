@@ -14,7 +14,7 @@ const HeroSection = ({ homeRef, aboutRef }) => {
     const router = useRouter();
 
     return (
-        <section ref={homeRef} className="pt-[5rem] lg:px-[15%] relative">
+        <section ref={homeRef} className="section-padding relative">
             <div className="hidden lg:block lg:absolute lg:bottom-14 lg:left-[50%] lg:translate-x-[-50%]">
                 <motion.div 
                     onClick={() => scrollToSection(aboutRef)}
@@ -34,7 +34,7 @@ const HeroSection = ({ homeRef, aboutRef }) => {
                     </p>
                 </motion.div>
             </div>
-            <div className="max-w-[1240px] lg:min-h-[90vh] w-full h-full lg:mx-auto lg:flex lg:justify-center lg:items-center">
+            <div className="container">
                 <div className="w-[100%] lg:flex lg:items-center lg:justify-evenly">
                     <div 
                         className="block lg:hidden"
@@ -55,22 +55,24 @@ const HeroSection = ({ homeRef, aboutRef }) => {
                         data-aos-delay="900"
                         data-aos-duration="1100"
                     >
-                        <p className="mb-3 text-[#acd7ff] font-light"> 
+                        <p className="mb-3 text-primaryTextColor font-light"> 
                             Welcome, my name is
                         </p>
-                        <p className="mb-3 text-[#acd7ff] font-semibold text-[1.6rem] xl:text-[2.4rem] 2xl:text-[3.2rem]">
+                        <p className="mb-3 secondary-text">
                             Myat Min Aung
                         </p>
-                        <p className="mb-3 font-semibold text-primaryColor text-[1.6rem] xl:text-[2.4rem] 2xl:text-[3.2rem]">
+                        <p className="mb-3 primary-text">
                             A Full-stack Developer
                         </p>     
-                        <p className="mb-3 lg:w-[550px] 2xl:w-[650px] text-base text-[#acd7ff] font-light">
-                            I build awesome things for the web specializing in <span className="text-primaryColor">Reactjs</span> & {" "}
+                        <p className="mb-3 lg:w-[550px] 2xl:w-[650px] default-text">
+                            I build awesome things for the web specializing in {" "}
+                            <span className="text-primaryColor">Reactjs</span> & {" "}
                             <span className="text-primaryColor">Nextjs </span>
-                            for the frontend and <span className="text-primaryColor">Nodejs</span> & {" "}
+                            for the frontend and {" "}
+                            <span className="text-primaryColor">Nodejs</span> & {" "}
                             <span className="text-primaryColor">Expressjs</span> for the backend.
                         </p>             
-                        <p className="mb-6 lg:w-[550px] 2xl:w-[650px] text-base text-[#acd7ff] font-light">
+                        <p className="mb-6 lg:w-[550px] 2xl:w-[650px] default-text">
                             Currently, I am focusing on frontend development for building incredible eCommerces at {" "}
                             <Link 
                                 target="_blank" 
