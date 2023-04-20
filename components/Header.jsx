@@ -11,8 +11,6 @@ import { scrollToSection } from "@/utils/scrollToSection";
 
 const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
 
-    const [isOpen, setIsOpen] = useState(false); 
-
     const navigation = [
         { id: 1, label: "About Me?", ref: aboutRef },
         { id: 2, label: "Experience", ref: expRef },
@@ -20,7 +18,17 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
         { id: 4, label: "Contact", ref: contactRef },
     ];
 
-    // Mobile menu animation
+    const [isOpen, setIsOpen] = useState(false); 
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden'
+        } else {
+            document.body.style.overflow = 'unset'
+        }
+    }, [isOpen]);
+
+    // mobile menu animation
     const menu = {
         exit: {
             opacity: 0,
@@ -33,24 +41,17 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
         }
     };
 
-    useEffect(() => {
-        if (isOpen) {
-            document.body.style.overflow = 'hidden'
-        } else {
-            document.body.style.overflow = 'unset'
-        }
-    }, [isOpen]);
-
     return (
-        <nav className="fixed top-0 w-full z-50 bg-[#1c1e28]">
+        <nav className="fixed top-0 w-full z-50 bg-primaryDark">
             <div 
                 className="flex items-center justify-between py-3 px-3 lg:py-6 lg:px-[10%]" 
                 data-aos="fade-in" 
                 data-aos-delay="900"
                 data-aos-duration="1000"
             >
+                {/* ----- web nav ----- */}
                 <div className="sticky z-[150] top-0 right-0">
-                    <p className="text-[#acd7ff] text-[1.4rem] font-[400] tracking-wider">
+                    <p className="text-primaryTextColor text-[1.4rem] font-[400] tracking-wider">
                         Mma.dev
                     </p>
                 </div>
@@ -61,6 +62,7 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
                         </p>
                     ))}
                 </div>
+                {/* ----- moblie nav ----- */}
                 <div className="block lg:hidden sticky z-[150] top-0 right-0">
                     <Hamburger 
                         toggled={isOpen} 
@@ -77,7 +79,7 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
                         animate={{ x: 0, opacity: 1 }}
                         exit="exit"
                         transition={{ duration: 0.4 }}
-                        className="fixed z-[100] bottom-0 top-0 right-0 left-0 w-full h-[100vh] overflow-hidden bg-[#1c1e28]"
+                        className="fixed z-[100] bottom-0 top-0 right-0 left-0 w-full h-[100vh] overflow-hidden bg-primaryDark"
                     >
                         <div className="min-h-screen w-screen relative flex flex-col items-center justify-center">                    
                             <div className="flex flex-col items-center justify-center gap-y-12">
@@ -112,7 +114,7 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
                                 <Link 
                                     target="__blank"
                                     href="mailto:myatminaung.dev@gmail.com" 
-                                    className="text-[#acd7ff] tracking-wider"
+                                    className="text-primaryTextColor tracking-wider"
                                 >
                                     myatminaung.dev@gmail.com
                                 </Link>
