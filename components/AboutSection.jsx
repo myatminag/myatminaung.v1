@@ -1,18 +1,26 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const AboutSection = ({ aboutRef }) => {
     return (
         <section ref={aboutRef} className="pt-[4rem] lg:pt-0 lg:px-[15%]">
             <div className="max-w-[1240px] lg:min-h-[100vh] lg:mx-auto lg:flex lg:justify-center lg:items-center">
-                <div className="w-[100%] lg:flex lg:items-center lg:justify-evenly">
-                    {/* <div className="block lg:hidden">
-                        
-                    </div> */}
-                    <div
-                        data-aos="fade-up" 
-                        data-aos-delay="0"
-                        data-aos-duration="1000"
-                    >
+                <div 
+                    data-aos="fade-up" 
+                    data-aos-delay="0"
+                    data-aos-duration="1000"
+                    className="w-[100%] lg:flex lg:items-center lg:justify-evenly"
+                >
+                    <div className="block lg:hidden">
+                        <Image 
+                            src="/ImageTwo.png"
+                            alt="hero-section-img"
+                            width={500}
+                            height={500}
+                            className="scale-75"
+                        />
+                    </div>
+                    <div>
                         <header className="mb-4 text-primaryColor font-semibold text-[1.6rem]">
                             About Me?
                         </header>
@@ -38,9 +46,14 @@ const AboutSection = ({ aboutRef }) => {
                             {"Let's"} build something special...
                         </Link>
                     </div>
-                    {/* <div className="w-[380px] hidden lg:block">
-                        
-                    </div> */}
+                    <div className="w-[380px] hidden lg:block">
+                        <Image 
+                            src="/ImageTwo.png"
+                            alt="hero-section-img"
+                            width={500}
+                            height={500}
+                        />
+                    </div>
                 </div>
             </div>
         </section>

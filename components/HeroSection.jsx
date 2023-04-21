@@ -40,7 +40,7 @@ const HeroSection = ({ homeRef, aboutRef }) => {
                         data-aos-duration="1000"
                     >
                         <Image 
-                            src="/heroSectionImg.png"
+                            src="/ImageOne.png"
                             alt="hero-section-img"
                             width={500}
                             height={500}
@@ -92,7 +92,7 @@ const HeroSection = ({ homeRef, aboutRef }) => {
                     </div>
                     <div className="w-[380px] hidden lg:block">
                         <Image 
-                            src="/heroSectionImg.png"
+                            src="/ImageOne.png"
                             alt="hero-section-img"
                             width={500}
                             height={500}
