@@ -16,8 +16,6 @@
     "framer-motion": "^7.10.2",
     "gsap": "^3.11.5",
     "hamburger-react": "^2.5.0",
-    "lottie-react": "^2.3.1",
-    "lottie-web": "^5.11.0",
     "next": "13.0.7",
     "react": "18.2.0",
     "react-dom": "18.2.0"
