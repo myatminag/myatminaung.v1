@@ -44,7 +44,6 @@ const HeroSection = ({ homeRef, aboutRef }) => {
                             alt="hero-section-img"
                             width={500}
                             height={500}
-                            className="scale-75"
                         />
                     </div>
                     <div
