@@ -96,7 +96,7 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
                                     </p>
                                 ))}
                             </div>
-                            <div className="absolute bottom-8">
+                            <div className="mt-[4rem]">
                                 <div className="mb-4 flex items-center justify-center gap-x-6">
                                     <Link aria-label="Github" target='__blank' href="https://github.com/MyatminAung2001">
                                         <GithubIcon />
@@ -114,7 +114,7 @@ const Header = ({ expRef, aboutRef, projectRef, contactRef }) => {
                                 <Link 
                                     target="__blank"
                                     href="mailto:myatminaung.dev@gmail.com" 
-                                    className="text-primaryTextColor tracking-wider"
+                                    className="text-primaryColor tracking-wider font-light"
                                 >
                                     myatminaung.dev@gmail.com
                                 </Link>
