@@ -1,39 +1,12 @@
-import { useEffect, useRef, Fragment } from "react";
+import { useRef, Fragment } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import UrlIcon from "./icons/UrlIcon";
 import { Projects } from "@/assets/projects";
 import GithubIcon from "./icons/GithubIcon";
 
-gsap.registerPlugin(ScrollTrigger)
-
 const ProjectSection = ({ projectRef }) => {
-
-    const imageRef = useRef();
-
-    const handleImageAnimation = (img) => {
-        gsap.to(img, {
-            scrollTrigger: {
-                trigger: img.parentNode,
-                start: "-500px top",
-                end: "center center",
-                scrub: true,
-            },
-            scale: 1,
-            transformOrigin: "center center",
-            autoAlpha: 1,
-            duration: 0.2,
-            startAt: { scale: 0.9, autoAlpha: 0.9}
-        });
-    };
-
-    useEffect(() => {
-        handleImageAnimation(imageRef.current);
-    }, [imageRef])
-
     return (
         <section ref={projectRef} className="pt-[4rem] xl:pt-[5rem] lg:px-[15%]">
             <div className="max-w-[1240px] min-h-[100vh] lg:mx-auto lg:flex lg:justify-center lg:items-center">
@@ -57,7 +30,6 @@ const ProjectSection = ({ projectRef }) => {
                                     {data.imageIsLeft === 1 ? (
                                         <Fragment>
                                             <Image 
-                                                ref={imageRef}
                                                 src={data.imgUrl}
                                                 alt={data.title}
                                                 height={500}
@@ -99,7 +71,6 @@ const ProjectSection = ({ projectRef }) => {
                                             {/* mobile view */}
                                             <div className="block xl:hidden">
                                                 <Image 
-                                                    ref={imageRef}
                                                     src={data.imgUrl}
                                                     alt={data.title}
                                                     height={500}
@@ -167,7 +138,6 @@ const ProjectSection = ({ projectRef }) => {
                                                 </div>
                                             </div>
                                             <Image 
-                                                ref={imageRef}
                                                 src={data.imgUrl}
                                                 alt={data.title}
                                                 height={500}
