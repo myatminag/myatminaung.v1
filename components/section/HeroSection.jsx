@@ -13,25 +13,20 @@ const HeroSection = ({ homeRef, aboutRef }) => {
             <Scroll aboutRef={aboutRef} />
 
             <div className="container">
-                <div className="w-[100%] lg:flex lg:items-center lg:justify-evenly">
-                    <div 
+                <div 
+                    data-aos="fade-up" 
+                    data-aos-delay="900"
+                    data-aos-duration="1000"
+                    className="w-[100%] lg:flex lg:items-center lg:justify-evenly"
+                >
+                    <Image 
+                        src="/ImageOne.png"
+                        alt="hero-section-img"
+                        width={500}
+                        height={500}
                         className="block lg:hidden"
-                        data-aos="fade-up" 
-                        data-aos-delay="900"
-                        data-aos-duration="1000"
-                    >
-                        <Image 
-                            src="/ImageOne.png"
-                            alt="hero-section-img"
-                            width={500}
-                            height={500}
-                        />
-                    </div>
-                    <div
-                        data-aos="fade-up" 
-                        data-aos-delay="900"
-                        data-aos-duration="1100"
-                    >
+                    />
+                    <div>
                         <p className="mb-3 text-primaryTextColor font-light"> 
                             Welcome, my name is
                         </p>
