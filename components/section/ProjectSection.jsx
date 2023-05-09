@@ -2,9 +2,9 @@ import { useRef, Fragment } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import UrlIcon from "./icons/UrlIcon";
+import UrlIcon from "../icons/UrlIcon";
 import { Projects } from "@/assets/projects";
-import GithubIcon from "./icons/GithubIcon";
+import GithubIcon from "../icons/GithubIcon";
 
 const ProjectSection = ({ projectRef }) => {
     return (

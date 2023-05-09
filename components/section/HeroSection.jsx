@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Scroll from "./Scroll";
+import Scroll from "../Scroll";
 
 const HeroSection = ({ homeRef, aboutRef }) => {
 

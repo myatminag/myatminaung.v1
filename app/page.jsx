@@ -5,11 +5,11 @@ import Aos from "aos";
 import 'aos/dist/aos.css';
 
 import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
-import ExpSection from "@/components/ExpSection";
-import ContactSection from "@/components/ContactSection";
-import ProjectSection from "@/components/ProjectSection";
+import HeroSection from "@/components/section/HeroSection";
+import AboutSection from "@/components/section/AboutSection";
+import ExpSection from "@/components/section/ExpSection";
+import ContactSection from "@/components/section/ContactSection";
+import ProjectSection from "@/components/section/ProjectSection";
 import ScrollToTop from "@/components/ScrollToTop";
 import SocialMedia from "@/components/SocialMedia";
 import Loader from "@/components/Loader";

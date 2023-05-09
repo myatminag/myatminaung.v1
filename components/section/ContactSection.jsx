@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-import FacebookIcon from "./icons/FacebookIcon";
-import GithubIcon from "./icons/GithubIcon";
-import InstagramIcon from "./icons/InstagramIcon";
-import LinkedInIcon from "./icons/LinkedInIcon";
+import FacebookIcon from "../icons/FacebookIcon";
+import GithubIcon from "../icons/GithubIcon";
+import InstagramIcon from "../icons/InstagramIcon";
+import LinkedInIcon from "../icons/LinkedInIcon";
 
 const ContactSection = ({ contactRef }) => {
     return (
