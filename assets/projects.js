@@ -2,7 +2,7 @@ export const Projects = [
     {
         id: 1,
         imageIsLeft: 1,
-        imgUrl: "https://res.cloudinary.com/dxvclcibh/image/upload/v1686058244/photo_2023-06-06_20-00-05_o0lxkx.jpg",
+        imgUrl: "https://res.cloudinary.com/dxvclcibh/image/upload/v1686150956/mockup_rbdgpm.png",
         title: "Bitbazzar",
         description:
             "BitBazaar offers an extensive and diverse collection of games and also have a wide range of games available, so you can find the perfect fit for your gaming setup.",
